@@ -123,13 +123,6 @@ function init()
 	mgSetScale(resumeUi, 0, 0)	
 	mgSetAlpha(resumeUi, 0)	
 
-	-- mode debugging text, added for random rooms
---[[	printText = mgCreateText("smashhit")
-	mgSetScale(printText, 1, 1)
-	mgSetPos(printText, centerX, top+120)
-	mgSetText(printText, tostring(mgGet("player.fakemode")))
-]]--
-
 	streakBalls = mgCreateImage("streak_balls.png")
 	streakBg = mgCreateImage("streak.png", 210, 0, 420, 210)
 	streakPie = mgCreateImage("streak.png", 0, 0, 210, 210)
@@ -407,8 +400,6 @@ function drawScore(ballCount, streak)
 		mgDraw(scoreText)
 	end
 
-	mgDraw(printText)
-
 	local streakFrac = ((streak%10))/10
 	mgSetPos(streakBg, 0, 0) 
 	mgDraw(streakBg)
@@ -439,6 +430,11 @@ function draw()
 	if t > 1 then t = 1 end
 
 	xColor = { mgGetMultiplierColor(multiplier) }
+
+	--Distance progress bar
+	local progress = tonumber(mgGet("level.progress"))
+	mgSetScale(progressImg, progress/128*2048, 0.5)
+	mgDraw(progressImg)
 
 	if credits then
 		mgSetAlpha(backUi, t)
@@ -520,12 +516,11 @@ function draw()
 				
 				mgPopCanvas()
 				
-                -- Don't know what this does
-				mgSetPos(scoreCanvas, centerX+100, centerY)
-				mgSetRot(scoreCanvas, math.pi/2)
-				mgPushCanvas(scoreCanvas)
-				drawScore(ballCount, streak)
-				mgPopCanvas()
+				--mgSetPos(scoreCanvas, centerX+100, centerY)
+			--	mgSetRot(scoreCanvas, math.pi/2)
+			--	mgPushCanvas(scoreCanvas)
+			--	drawScore(ballCount, streak)
+			--	mgPopCanvas()
 			else
 				mgSetPos(scoreCanvas, multX, multY)
 				mgPushCanvas(scoreCanvas)
