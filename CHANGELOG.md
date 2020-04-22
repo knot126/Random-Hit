@@ -22,11 +22,11 @@ Changes since 1.8.0:
 * Release information now at the fanon wiki
 * [https://drive.google.com/open?id=1vu0rtVMJQtEZ-VIdCea6n6_1pxr9RZl5 Room Source code v13]
 
-# 1.9.0dev2
+## 1.9.0dev2
 
 * Started work on adding version text
 
-# 1.9.0dev1
+## 1.9.0dev1
 
 *aka 1.8.99*
 
@@ -35,7 +35,7 @@ Changes since 1.8.0:
 * Added segments from betas (0.8.0)
 * Moving release announcements to the Fanon Wiki
 
-# 1.8.0
+## 1.8.0
 
 * New Icon and App Title ("Random Hit")
 * Edited first room segments to use star (+10) crystals to make the gameplay easier
