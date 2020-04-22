@@ -6,6 +6,10 @@ This is the repository for Cdde's Smash Hit Random Rooms mod, for v1.9.1 and lat
 
 You need to delete the exsisting assets folder and then copy this one onto the APK.
 
+### Important Files
+
+* `assets/rooms/random/random.lua` - the main random room file
+
 ## Mod Info
 
 This mod is based on 1.4.x, specifically 1.4.2 and 1.4.3.
