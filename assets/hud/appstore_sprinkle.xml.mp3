@@ -1,0 +1,3 @@
+<ui texture="appstore.png" shade="true">	
+	<rect coords="0 0 610 218" cmd="script:sprinkle ; game.menu"/>
+</ui>

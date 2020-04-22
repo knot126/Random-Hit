@@ -1,0 +1,3 @@
+<ui texture="help.png" shade="true">	
+	<outside cmd="script:hidehelp" />
+</ui>

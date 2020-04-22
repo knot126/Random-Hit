@@ -1,0 +1,31 @@
+<segment size="12 10 16" template="deathstar_s2">
+	<box size="1.0 0.5 0.5" pos="0.0 -0.325 -0.5" hidden="0" template="deathstar2"/>
+	<box size="0.25 1.5 0.5" pos="1.25 1.5 -0.5" hidden="0" template="deathstar2"/>
+	<box size="0.25 1.5 0.5" pos="-1.25 1.5 -0.5" hidden="0" template="deathstar2"/>
+	<box size="1.0 0.5 0.5" pos="0.0 2.5 -0.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.5 0.5" pos="-1.0 -0.45 -3.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.5 0.5" pos="-1.0 3.375 -4.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.5 0.5" pos="-1.0 -0.375 -4.5" hidden="0" template="deathstar2"/>
+	<box size="11.75 1.0 3.0" pos="0.25 4.0 -3.0" hidden="0" template="deathstar2"/>
+	<box size="1.5 1.0 4.5" pos="0.0 -1.0 -4.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.5 0.5" pos="-1.0 -0.45 -8.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 1.0 0.5" pos="-1.0 -0.625 -11.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 1.0 0.5" pos="1.0 -0.75 -11.5" hidden="0" template="deathstar2"/>
+	<box size="1.5 1.0 1.5" pos="0.0 -0.875 -10.5" hidden="0" template="deathstar2"/>
+	<obstacle pos="-1.0 0.82235 -12.5" hidden="0" template="deathstar_glass" type="scoretop" group="5"/>
+	<obstacle pos="1.0 0.94735 -12.5" hidden="0" template="deathstar_glass" type="scoretop" group="5"/>
+	<box size="0.5 1.0 0.5" pos="1.0 3.375 -12.5" hidden="0" template="deathstar2"/>
+	<box size="1.5 0.5 0.5" pos="0.0 0.0 -12.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.1875 0.5" pos="-1.0 0.6875 -12.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 1.0 0.5" pos="-1.0 3.375 -12.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 1.0 0.5" pos="0.0 3.625 -12.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.25 0.5" pos="1.0 0.75 -12.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.5 0.5" pos="0.0 -0.45 -14.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.5 0.5" pos="1.0 -0.375 -14.5" hidden="0" template="deathstar2"/>
+	<box size="0.5 0.5 0.5" pos="-1.0 -0.375 -14.5" hidden="0" template="deathstar2"/>
+	<box size="5.25 2.5 7.5" pos="-6.75 0.5 -7.5" hidden="0" template="deathstar2"/>
+	<box size="5.25 2.5 7.5" pos="6.75 0.5 -7.5" hidden="0" template="deathstar2"/>
+	<box size="11.75 1.0 3.0" pos="0.25 4.0 -12.0" hidden="0" template="deathstar2"/>
+	<box size="1.5 1.0 2.0" pos="0.0 -1.0 -14.0" hidden="0" template="deathstar2"/>
+</segment>
+

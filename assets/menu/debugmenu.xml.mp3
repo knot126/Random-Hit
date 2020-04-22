@@ -1,0 +1,8 @@
+<ui texture="debugmenu.png" selected="debugmenu.png" shade="true">	
+	<rect coords="0 148 746 259" cmd="debug.reset"/>
+	<rect coords="0 260 746 369" cmd="debug.unlockall"/>
+	<rect coords="0 370 746 479" cmd="debug.premium"/>
+	<rect coords="0 480 746 589" cmd="debug.nopremium"/>
+	<outside cmd="script:hidedebug"/>
+</ui>
+

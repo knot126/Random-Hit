@@ -1,0 +1,642 @@
+function loadSegments()
+	-- Skip to line 456 for init functions and discaimers
+
+	confSegment("basic/basic/chasms", 1)
+	confSegment("basic/basic/chasms2", 1)
+	confSegment("basic/basic/stairs", 1)
+	confSegment("basic/basic/stairs2", 1)
+	confSegment("basic/dark/bs", 1)
+	confSegment("basic/dark/bs_extraballs", 1)
+	confSegment("basic/dark/2_bs", 1)
+	confSegment("basic/dark/2_bs_elevators", 1)
+	confSegment("basic/dark/ledges", 1)
+	confSegment("basic/darker/bs", 1)
+	confSegment("basic/darker/2_bs_arch", 1)
+	confSegment("basic/darker/chasms", 1)
+	confSegment("basic/darker/chasms_bs", 1)
+	confSegment("brownie/part3/16_0", 1)
+	confSegment("brownie/part3/16_1", 1)
+	confSegment("brownie/part3/16_2", 1)
+	confSegment("brownie/part3/16_3", .25)
+	confSegment("brownie/part2/16_0", 1)
+	confSegment("brownie/part2/16_1", 1)
+	confSegment("brownie/part2/16_2", 1, 1)
+	confSegment("brownie/part2/16_3", 1, 2)
+	confSegment("brownie/part1/16_0", 1)
+	confSegment("brownie/part1/16_1", 1)
+	confSegment("brownie/part1/16_2", 1, 2)
+	confSegment("brownie/part1/16_3", 1)
+	confSegment("canyon/cave/8_0", 1)
+	confSegment("canyon/cave/16_0", 1)
+	confSegment("canyon/cave/32_0", 1)
+	confSegment("canyon/columns/4_0", .5)
+	confSegment("canyon/columns/16_1", 1)
+	confSegment("canyon/columns/16_2", .5)
+	confSegment("canyon/columns/32_0", 1)
+	confSegment("canyon/trail/8_0", 1)
+	confSegment("canyon/trail/16_0", .25)
+	confSegment("canyon/trail/16_1", 1)
+	confSegment("canyon/trail/16_2", .1)
+	confSegment("canyon/trail/16_3", 1)
+	confSegment("canyon/trail/32_0", 1)
+	confSegment("cave/spin/16_0", 1)
+	confSegment("cave/spin/16_1", 1)
+	confSegment("cave/spin/16_2", 1)
+	confSegment("cave/narrow/16_0", 1)
+	confSegment("cave/narrow/16_1", 1)
+	confSegment("cave/narrow/16_2", 1)
+	confSegment("cave/narrow/16_3", 1)
+	confSegment("cave/narrow/8_0", 1)
+	confSegment("cave/narrow/8_1", 1)
+	confSegment("cave/hall/32_0", 1)
+	confSegment("cave/hall/16_1", 2, 1)
+	confSegment("cave/hall/16_2", 1)
+	confSegment("cave/hall/16_3", 1)
+	confSegment("cave/hall/8_0", 1)
+	confSegment("cave/hall/8_1", 2, 1)
+	confSegment("cave/hall/8_2", 2, 1)
+	confSegment("cave/corridor/16_0", 1)
+	confSegment("cave/corridor/16_1", 1)
+	confSegment("cave/corridor/16_2", 1)
+	confSegment("cave/corridor/16_3", 1)
+	confSegment("cave/corridor/8_0", .5)
+	confSegment("holodeck/bs", 1)
+	confSegment("holodeck/bs2", 1)
+	confSegment("holodeck/bs3", 1)
+	confSegment("holodeck/fold", 1)
+	confSegment("holodeck/fold2", 1)
+	confSegment("holodeck/fold3", 0.5)
+	confSegment("holodeck/bonus_16_0", 1)
+	confSegment("holodeck/bonus_16_1", 1)
+	confSegment("holodeck/bonus_16_2", 1)
+	confSegment("holodeck/bonus_16_3", 1)
+	confSegment("holodeck/calm0", 1)
+	confSegment("holodeck/calm1", 1)
+	confSegment("holodeck/rapid0", 1)
+	confSegment("holodeck/rapid1", 1)
+	confSegment("holodeck/rapid2", 0.25, 1)
+	confSegment("holodeck/rapid3", 1)
+	confSegment("holodeck/rapid4", 1)
+	confSegment("holodeck/rapid5", 1)
+	confSegment("holodeck/rapid6", 1)
+	confSegment("city/fall/32_0", 1)
+	confSegment("city/fall/32_1", 1)
+	confSegment("city/fall/32_2", 1)
+	confSegment("city/fall/32_3", 1)
+	confSegment("city/fall/32_4", 2)
+	confSegment("city/fall/32_5", 2)
+	confSegment("city/narrow/16_0", 1)
+	confSegment("city/narrow/16_1", 1)
+	confSegment("city/narrow/16_2", 1)
+	confSegment("city/narrow/16_3", 1)
+	confSegment("city/narrow/16_4", 1)
+	confSegment("city/narrow/16_5", 1)
+	confSegment("city/path/16_0", 1)
+	confSegment("city/path/16_1", 1)
+	confSegment("city/path/16_2", 1)
+	confSegment("city/path/16_3", 1)
+	confSegment("city/path/16_4", .5)
+	confSegment("city/path/16_5", .5)
+	confSegment("city/path2/16_0", 1)
+	confSegment("city/path2/16_1", 1)
+	confSegment("city/path2/16_2", 1)
+	confSegment("city/path2/16_3", 1)
+	confSegment("hyperspace/warp/32_0", 1)
+	confSegment("hyperspace/warp/32_1", 1)
+	confSegment("hyperspace/warp/32_2", 1)
+	confSegment("hyperspace/orbit/32_1", 1)
+	confSegment("hyperspace/orbit/32_2", 1)
+	confSegment("hyperspace/orbit/32_3", 1)
+	confSegment("hyperspace/orbit/32_4", 1)
+	confSegment("hyperspace/orbit/32_5", 1)
+	confSegment("hyperspace/orbit/32_6", 1)
+	confSegment("hyperspace/orbit/32_7", 1)
+	confSegment("hyperspace/fall/32_0", 1)
+	confSegment("hyperspace/fall/32_1", 1)
+	confSegment("hyperspace/fall/32_2", 1)
+	confSegment("hyperspace/fall/32_3", 1)
+	confSegment("hyperspace/cruise/32_0", 1)
+	confSegment("hyperspace/cruise/32_1", 1)
+	confSegment("hyperspace/cruise/32_2", 1)
+	confSegment("hyperspace/cruise/32_3", 1)
+	confSegment("night/part3/elgrid_line_st", 0.4)
+	confSegment("night/part3/elgrid_line_st2", 0.4)
+	confSegment("night/part3/pendulums", 2)
+	confSegment("night/part3/suspendcube", 1)
+	confSegment("night/part3/suspendcubes", 1)
+	confSegment("night/part3/suspendcubes_2", 1)
+	confSegment("night/part3/suspendcubes_3", 1)
+	confSegment("night/part2/crank", 1)
+	confSegment("night/part2/crank2", 1)
+	confSegment("night/part2/dna_dec", 1)
+	confSegment("night/part2/dna_dec2", 1)
+	confSegment("night/part2/dna_st", 1)
+	confSegment("night/part2/dna_st2", 1)
+	confSegment("night/part2/dna_st3", 1)
+	confSegment("night/part2/bar", 1)
+	confSegment("night/part2/iris", 1, 1)
+	confSegment("night/part1/elgrid_box", 1)
+	confSegment("night/part1/elgrid_box2", 1)
+	confSegment("night/part1/elgrid_st", 1, 1)
+	confSegment("night/part1/elgrid_st_2", 1, 1)
+	confSegment("night/part1/elgrid_st_3", 1)
+	confSegment("ocean/tunnel/16_0", 1)
+	confSegment("ocean/tunnel/16_1", 1)
+	confSegment("ocean/tunnel/16_2", 1)
+	confSegment("ocean/tunnel/4_0", 1)
+	confSegment("ocean/tunnel/4_1", .5)
+	confSegment("ocean/tunnel/8_0", 1)
+	confSegment("ocean/towers/16_0", 1, 3)
+	confSegment("ocean/towers/16_1", 1)
+	confSegment("ocean/towers/16_2", .5, 2)
+	confSegment("ocean/towers/8_0", 1)
+	confSegment("ocean/towers/8_1", 1)
+	confSegment("ocean/towers/8_2", 1)
+	confSegment("ocean/towers/8_3", 1.5, 4)
+	confSegment("ocean/stairs/16_0", 1)
+	confSegment("ocean/stairs/32_0", 1)
+	confSegment("ocean/stairs/8_0", 1)
+	confSegment("ocean/stairs/8_1", 1)
+	confSegment("ocean/stairs/8_2", .2)
+	confSegment("ocean/sky/16_0", 1)
+	confSegment("ocean/sky/4_0", 1)
+	confSegment("ocean/sky/8_0", 1)
+	confSegment("ocean/sky/8_1", 1)
+	confSegment("phosphor/part4/16_0", 1)
+	confSegment("phosphor/part4/16_1", 1)
+	confSegment("phosphor/part4/16_2", 1)
+	confSegment("phosphor/part4/16_3", 1)
+	confSegment("phosphor/part3/16_0", 1)
+	confSegment("phosphor/part3/16_1", 1)
+	confSegment("phosphor/part3/16_2", 1)
+	confSegment("phosphor/part3/16_3", 1)
+	confSegment("phosphor/part2/16_0", 1)
+	confSegment("phosphor/part2/16_1", 1)
+	confSegment("phosphor/part2/16_2", 1)
+	confSegment("phosphor/part2/16_3", 1)
+	confSegment("phosphor/part2/16_4", 1)
+	confSegment("phosphor/part1/16_0", 1)
+	confSegment("phosphor/part1/16_1", 1)
+	confSegment("phosphor/part1/16_2", 1)
+	confSegment("phosphor/part1/16_3", 1)
+	confSegment("phosphor/part1/16_4", 1)
+	confSegment("river/tunnel/crank", 1)
+	confSegment("river/tunnel/crank2", 1, 2)
+	confSegment("river/tunnel/hammer", 1)
+	confSegment("river/tunnel/hammer2", 1, 1)
+	confSegment("river/path2/16_0", 1)
+	confSegment("river/path2/16_1", 1)
+	confSegment("river/path2/16_2", 1)
+	confSegment("river/path2/16_3", 1, 1)
+	confSegment("river/path2/16_4", 1, 1)
+	confSegment("river/path2/16_5", 1, 1)
+	confSegment("river/path/bar", 1)
+	confSegment("river/path/bar_bounce", 1)
+	confSegment("river/path/bounce", 1)
+	confSegment("river/path/fly", 1)
+	confSegment("cave2/top/16_0", 1,2)
+	confSegment("cave2/top/16_1", 1,3)
+	confSegment("cave2/top/16_2", 1)
+	confSegment("cave2/top/16_3", 1)
+	confSegment("cave2/top/16_4", 1)
+	confSegment("cave2/top/16_5", 1,2)
+	confSegment("cave2/narrow/16_0", 1)
+	confSegment("cave2/narrow/16_1", 1)
+	confSegment("cave2/narrow/16_2", 1)
+	confSegment("cave2/narrow/16_3", 1)
+	confSegment("cave2/narrow/16_4", 1)
+	confSegment("cave2/bottom/16_0", 1)
+	confSegment("cave2/bottom/16_1", 1)
+	confSegment("cave2/bottom/16_2", 1)
+	confSegment("cave2/bottom/16_3", 1)
+	confSegment("cave2/bottom/16_4", 1)
+	confSegment("cave2/bottom/16_5", 1)
+
+	-- Endless
+	-- Since there's so much of it compared to other segments I tuned down
+	-- the spawn rate.
+
+	confSegment("endless/open/obstacles/16_sweepers_x2", 0.5)
+	confSegment("endless/open/obstacles/8_suspendwindow", 0.5)
+	confSegment("endless/open/obstacles/8_rotor", 0.5)
+	confSegment("endless/open/obstacles/8_rotor2", 0.5)
+	confSegment("endless/open/obstacles/8_foldwindow", 0.5)
+	confSegment("endless/open/obstacles/8_foldwindow2", 0.5)
+	confSegment("endless/open/scores/16_scoretops_x6", 0.5)
+	confSegment("endless/open/scores/16_scoretops_x4", 0.5)
+	confSegment("endless/open/scores/16_scoretops_x4_2", 0.5)
+	confSegment("endless/open/scores/8_scoretops_x2", 0.5)
+	confSegment("endless/open/scores/8_scoretop", 0.5)
+	confSegment("endless/open/scores/8_scoretop2", 0.5)
+	confSegment("endless/open/powerups/8_ballfrenzy", 0.5)
+	confSegment("endless/open/powerups/8_ballfrenzy2", 0.5)
+	confSegment("endless/open/powerups/8_nitroballs", 0.5)
+	confSegment("endless/open/powerups/8_nitroballs2", 0.5)
+	confSegment("endless/open/powerups/8_slomo", 0.5)
+	confSegment("endless/open/powerups/8_slomo2", 0.5)
+	confSegment("endless/narrow/obstacles/16_pendulums_x2", 0.5)
+	confSegment("endless/narrow/obstacles/16_flycubes_x2", 0.5)
+	confSegment("endless/narrow/obstacles/16_cranks_x2", 0.5)
+	confSegment("endless/narrow/obstacles/8_suspendside", 0.5)
+	confSegment("endless/narrow/obstacles/8_suspendbox", 0.5)
+	confSegment("endless/narrow/obstacles/8_pyramid", 0.5)
+	confSegment("endless/narrow/obstacles/8_beatmill", 0.5)
+	confSegment("endless/narrow/scores/16_scoretops_x8", 0.5)
+	confSegment("endless/narrow/scores/16_scoretops_x6", 0.5)
+	confSegment("endless/narrow/scores/16_scoretops_x6_2", 0.5)
+	confSegment("endless/narrow/scores/16_scoretops_x4", 0.5)
+	confSegment("endless/narrow/scores/8_scoretops_x2", 0.5)
+	confSegment("endless/narrow/scores/8_scoretop", 0.5)
+	confSegment("endless/narrow/scores/8_scoretop2", 0.5)
+	confSegment("endless/narrow/scores/8_scoretop3", 0.5)
+	confSegment("endless/narrow/scores/8_scoretop4", 0.5)
+	confSegment("endless/narrow/powerups/8_ballfrenzy", 0.5)
+	confSegment("endless/narrow/powerups/8_ballfrenzy2", 0.5)
+	confSegment("endless/narrow/powerups/8_nitroballs", 0.5)
+	confSegment("endless/narrow/powerups/8_nitroballs2", 0.5)
+	confSegment("endless/wide/obstacles/16_lasers", 0.5)
+	confSegment("endless/wide/obstacles/16_lasers2", 0.5)
+	confSegment("endless/wide/obstacles/16_dropblocks", 0.5)
+	confSegment("endless/wide/obstacles/8_suspendcube", 0.5)
+	confSegment("endless/wide/obstacles/8_revolver", 0.5)
+	confSegment("endless/wide/obstacles/8_revolver2", 0.5)
+	confSegment("endless/wide/scores/16_scoretops_x8", 0.5)
+	confSegment("endless/wide/scores/16_scoretops_x6", 0.5)
+	confSegment("endless/wide/scores/8_scoretop3", 0.5)
+	confSegment("endless/wide/scores/8_scoretop4", 0.5)
+	confSegment("endless/wide/powerups/8_ballfrenzy", 0.5)
+	confSegment("endless/wide/powerups/8_ballfrenzy2", 0.5)
+	confSegment("endless/wide/powerups/8_nitro", 0.5)
+	confSegment("endless/space/obstacles/16_0", 0.5)
+	confSegment("endless/space/obstacles/16_1", 0.5)
+	confSegment("endless/space/obstacles/16_2", 0.5)
+	confSegment("endless/space/obstacles/16_3", 0.5)
+	confSegment("endless/space/scores/16_0", 0.5)
+	confSegment("endless/space/scores/16_1", 0.5)
+	confSegment("endless/space/scores/16_2", 0.5)
+	confSegment("endless/space/scores/16_3", 0.5)
+
+	-- Zen mode
+	-- For zen stuff I didn't incl. scores things...
+
+	confSegment("endless/space/powerups/16_0", 0.5)
+	confSegment("endless/space/powerups/16_1", 0.5)
+	confSegment("endless/space/powerups/16_2",0.1)
+	confSegment("endless/space/powerups/16_3", 0.5)
+	confSegment("zen/space/obstacles/16_0", 0.5)
+	confSegment("zen/space/obstacles/16_1", 0.5)
+	confSegment("zen/space/obstacles/16_2", 0.5)
+	confSegment("zen/space/obstacles/16_3", 0.5)
+	confSegment("zen/open/obstacles/8_foldwindow", 0.5)
+	confSegment("zen/open/obstacles/8_foldwindow2", 0.5)
+	confSegment("zen/open/obstacles/8_suspendbox", 0.5)
+	confSegment("zen/open/obstacles/8_suspendwindow", 0.5)
+	confSegment("zen/open/obstacles/16_sweepers", 0.5)
+	confSegment("zen/open/obstacles/16_sweepers_x2", 0.5)
+	confSegment("zen/open/obstacles/dna0", 0.5)
+	confSegment("zen/open/obstacles/dna1", 0.5)
+	confSegment("zen/open/obstacles/dna2", 0.5)
+	confSegment("zen/open/obstacles/dna3", 0.5)
+	confSegment("zen/open/obstacles/8_foldwindow", 0.5)
+	confSegment("zen/open/obstacles/8_foldwindow2", 0.5)
+	confSegment("zen/open/obstacles/8_rotor", 0.5)
+	confSegment("zen/open/obstacles/8_rotor2", 0.5)
+	confSegment("zen/open/obstacles/8_suspendbox", 0.5)
+	confSegment("zen/open/obstacles/8_suspendwindow", 0.5)
+	confSegment("zen/open/obstacles/16_sweepers", 0.5)
+	confSegment("zen/open/obstacles/16_sweepers_x2", 0.5)
+	confSegment("zen/narrow/obstacles/8_beatmill", 0.5)
+	confSegment("zen/narrow/obstacles/8_pyramid", 0.5)
+	confSegment("zen/narrow/obstacles/8_suspendside", 0.5)
+	confSegment("zen/narrow/obstacles/16_cranks_x2", 0.5)
+	confSegment("zen/narrow/obstacles/16_pendulums_x2", 0.5)
+	confSegment("zen/narrow/obstacles/fall_0", 0.5)
+	confSegment("zen/narrow/obstacles/fall_1", 0.5)
+
+	-- Co-op/Versus Segments
+	if coop_segments == 1 then
+		-- Co-op segments are not fair, so allow it to be configureable.
+		confSegment("split/split_bonus/8", 0.2)
+		confSegment("split/split_bonus/8_2", 0.2)
+		confSegment("split/split_bonus/16", 0.2)
+		confSegment("split/split_bonus/16_2", 0.2)
+		confSegment("split/split_bonus/16_3", 0.2)
+		confSegment("split/split_bonus/16_blocks", 0.2)
+		confSegment("split/split_bonus/16_gate", 0.2)
+		confSegment("split/split_bonus/8_coop", 0.2)
+		confSegment("split/split_bonus/8_2_coop", 0.2)
+		confSegment("split/split_bonus/16_coop", 0.2)
+		confSegment("split/split_bonus/16_2_coop", 0.2)
+		confSegment("split/split_bonus/16_3_coop", 0.2)
+		confSegment("split/split_bonus/16_blocks", 0.2)
+		confSegment("split/split_bonus/16_gate_coop", 0.2)
+
+		confSegment("split/split_rot/16_0", 0.1)
+		confSegment("split/split_rot/16_1", 0.1)
+		confSegment("split/split_rot/16_2", 0.1)
+		confSegment("split/split_rot/16_3", 0.1)
+		confSegment("split/split_rot/16_0_coop", 0.1)
+		confSegment("split/split_rot/16_2_coop", 0.1)
+
+		confSegment("split/solo/16_0_coop", 0.1)
+		confSegment("split/solo/16_1", 0.1)
+		confSegment("split/solo/16_2_coop", 0.1)
+		confSegment("split/solo/16_3", 0.1)
+		confSegment("split/solo/16_4_coop", 0.1)
+		confSegment("split/solo/8_0", 0.1)
+		confSegment("split/solo/16_0", 0.1)
+		confSegment("split/solo/16_2", 0.1)
+		confSegment("split/solo/16_4", 0.1)
+		confSegment("split/solo/8_1", 0.1)
+
+		confSegment("split/split0/16_8st", 0.1)
+		confSegment("split/split0/16_8st2", 0.1)
+		confSegment("split/split0/16_8st3", 0.1)
+		confSegment("split/split0/16_3rotors", 0.1)
+		confSegment("split/split0/16_bars", 0.1)
+		confSegment("split/split0/16_fold_diamond", 0.1)
+		confSegment("split/split0/16_rotor", 0.1)
+		confSegment("split/split0/16_sweeper", 0.1)
+		confSegment("split/split0/16_8st2", 0.1)
+		confSegment("split/split0/16_8st3", 0.1)
+		confSegment("split/split0/16_3rotors", 0.1)
+		confSegment("split/split0/16_bars_coop", 0.1)
+		confSegment("split/split0/16_bar_coop", 0.1)
+		confSegment("split/split0/16_fold_diamond_coop", 0.1)
+		confSegment("split/split0/16_laserbars_coop", 0.1)
+		confSegment("split/split0/16_rotor_coop", 0.1)
+		confSegment("split/split0/16_sweeper", 0.1)
+
+		confSegment("split/split0/16_2lasers", 0.1)
+		confSegment("split/split0/16_laserbars", 0.1)
+		confSegment("split/split0/16_laserdiamond", 0.1)
+		confSegment("split/split0/16_revolver", 0.1)
+		confSegment("split/split0/16_rotor", 0.1)
+		confSegment("split/split0/16_st", 0.1)
+		confSegment("split/split0/16_suspendc", 0.1)
+		confSegment("split/split0/16_vbars", 0.1)
+		confSegment("split/split0/16_2lasers", 0.1)
+		confSegment("split/split0/16_laserbars_coop", 0.1)
+		confSegment("split/split0/16_laserdiamond_coop", 0.1)
+		confSegment("split/split0/16_revolver", 0.1)
+		confSegment("split/split0/16_rotor_coop", 0.1)
+		confSegment("split/split0/16_st_coop", 0.1)
+		confSegment("split/split0/16_vbars", 0.1)
+		confSegment("split/split0/16_laser_coop", 0.1)
+		confSegment("split/split0/16_sweep_coop", 0.1)
+
+		confSegment("split/split1/16_0", 0.1)
+		confSegment("split/split1/16_1", 0.1)
+		confSegment("split/split1/16_2", 0.1)
+		confSegment("split/split1/16_3", 0.1)
+		confSegment("split/split1/16_4", 0.1)
+		confSegment("split/split1/16_5", 0.1)
+		confSegment("split/split1/16_6", 0.1)
+		confSegment("split/split1/16_0_coop", 0.1)
+		confSegment("split/split1/16_2_coop", 0.1)
+		confSegment("split/split1/16_4_coop", 0.1)
+		confSegment("split/split1/16_5_coop", 0.1)
+		confSegment("split/split1/16_6_coop", 0.1)
+		confSegment("split/split1/16_laser_coop", 0.1)
+		confSegment("split/split1/16_sweep_coop", 0.1)
+
+		confSegment("split/split2/16_0", 0.1)
+		confSegment("split/split2/16_1", 0.1)
+		confSegment("split/split2/16_2", 0.1)
+		confSegment("split/split2/16_3", 0.1)
+		confSegment("split/split2/16_0_coop", 0.1)
+		confSegment("split/split2/16_2_coop", 0.1)
+		confSegment("split/split2/16_3_coop", 0.1)
+		confSegment("split/split2/16_suspend_coop", 0.1)
+
+		confSegment("split/split_start/16_0", 0.1)
+		confSegment("split/split_start/16_1", 0.1)
+		confSegment("split/split_start/16_2", 0.1)
+		confSegment("split/split_start/16_3", 0.1)
+		confSegment("split/split_start/16_0_coop", 0.1)
+		confSegment("split/split_start/16_1_coop", 0.1)
+		confSegment("split/split_start/16_3_coop", 0.1)
+	end
+
+	if has_old_segments == 1 then
+	-- imports old segments - you must have them in assets/segments!
+		confSegment("canyon2/field/ponds", 1)
+		confSegment("canyon2/field/rocks", 1)
+		confSegment("canyon2/field/rocks2", 1)
+		confSegment("canyon2/field/rocks3", 1)
+		confSegment("canyon2/trench/sweepers", 1)
+		confSegment("canyon2/trench/sweeper_rocks", 1)
+		confSegment("canyon2/trench/windows", 1)
+		confSegment("canyon2/trench/window_rocks", 1)
+		confSegment("canyon2/tunnel/falling", 1)
+		confSegment("canyon2/tunnel/bar_falling", 1)
+		confSegment("canyon2/tunnel/scores", 1)
+		confSegment("canyon2/tunnel/bar_cubes", 1)
+
+		confSegment("deathstar/corridor/corridor_0", 1)
+		confSegment("deathstar/corridor/corridor_1", 1)
+		confSegment("deathstar/corridor/corridor_2", 1)
+		confSegment("deathstar/corridor/corridor_3", 1)
+		confSegment("deathstar/trench/trench_0", 1)
+		confSegment("deathstar/trench/trench_1", 1)
+		confSegment("deathstar/trench/trench_2", 1)
+		confSegment("deathstar/trench/trench_3", 1)
+
+		--[[confSegment("ocean2/part1/ocean0", 1)
+		confSegment("ocean2/part1/ocean1", 1)
+		confSegment("ocean2/part1/ocean2", 1)
+		confSegment("ocean2/part2/tunnel0", 1)
+		confSegment("ocean2/part2/tunnel1", 1)
+		confSegment("ocean2/part2/tunnel2", 1)
+		confSegment("ocean2/part2/tunnel3", 1)]]--
+		-- old ocean textures are missing so it looks very bad
+	end
+end
+
+function init()
+
+	-- Smash Hit random rooms - Room version 13 by cdde
+	-- Special thanks to Megadron Z_Z for some help.
+
+	-- Note: My mod and Megadron Z_Z's mod are NOT THE
+	-- SAME! This one was inspired by his, with a slightly
+	-- diffrent vision.
+
+	-- This room file should play nicely (if configured
+	-- correctly) when repackaged into default Smash Hit.
+	-- Please do not hesitate to copy this into your own
+	-- Smash Hit mod as a game mod or something!
+
+	-- Room Configuration
+	-- This can be used to enable/disable some things...
+
+	local has_old_music = 1 -- for music in old folder
+	local has_old_segments = 0 -- for old segments
+	coop_segments = 0 -- For most Co-Op/Versus segments
+	local increseing_speed = 1 -- For (Proof-Of-Concept) Dynamic TargetLen change
+
+	-- End Room Configuration
+
+	local music = math.random(0, 45)
+	if has_old_music == 1 then
+		music = math.random(0, 46)
+	end
+	local color_a_red = mgRndFloat(0.5, 2)
+	local color_a_green = mgRndFloat(0.5, 2)
+	local color_a_blue = mgRndFloat(0.5, 2)
+	local color_b_red = mgRndFloat(0.5, 2)
+	local color_b_green = mgRndFloat(0.5, 2)
+	local color_b_blue = mgRndFloat(0.5, 2)
+	local gravity = mgRndFloat(-0.05, 1)
+	local conflict = math.random(0, 1)
+	
+	-- The following fixes the stop glitch, since 38 and 42 aren't real
+	-- musics, instead we use 29_1/2, 38_1/2 and 42_1/2.
+
+	if music == 29 then
+		if conflict == 1 then
+			music = "29"
+		elseif conflict == 0 then
+			music = "29_2"
+		end
+	elseif music == 38 then
+		if conflict == 1 then
+			music = "38_1"
+		elseif conflict == 0 then
+			music = "38_2"
+		end
+	elseif music == 42 then
+		if conflict == 1 then
+			music = "42_1"
+		elseif conflict == 0 then
+			music = "42_2"
+		end
+	elseif music == 45 then
+		music = "bowling"
+	elseif music == 46 then
+		-- POSSIBLE BUG: This music isn't loaded correctly -> stop glitch
+		music = "old/4_36s_test"
+	end
+
+	-- Setup enviorment
+	mgMusic(tostring(music)) -- Probably better to convert music to a string first
+	mgFogColor(color_a_red, color_a_green, color_a_blue, color_b_red, color_b_green, color_b_blue)
+	mgGravity(gravity)
+
+	local r = math.random(5)
+
+	if r == 1 then
+		mgParticles("starfield")
+	elseif r == 2 then
+		mgParticles("sidesrising")
+	elseif r == 3 then
+		mgParticles("lowrising")
+	elseif r == 4 then
+		mgParticles("falling")
+	end
+
+	-- TODO: Rotation is tied to music
+	local t = math.random(30)
+	if t == 15 then
+		mgSetRotation(-1)
+	end
+
+	-- To help reduce clutter, I've moved the confSgement-s statements into its own function...
+	loadSegments()
+
+	l = 0
+
+	-- Next line gets a random number between 120 and 350, sets as our target
+	-- length.
+	local targetLen = math.random(120, 350)
+
+	if increaseing_speed == 1 then
+		k = mgGetInt("game.speed")
+		if k < 150 then
+			k = 150
+		end
+		k = k + 5
+		if k > 300 then
+			k = 300
+		end
+		targetLen = k
+		mgSetInt("game.speed", k)
+	end
+
+	while l < targetLen do
+		s = nextSegment()
+		l = l + mgSegment(s, -l)	
+		l = l + math.random(2, 6) -- Add some space between segments
+	end
+
+	-- Random Doors
+
+	local d = math.random(1, 60)
+	if d == 1 then 
+		l = l + mgSegment("brownie/part2/door", -l)
+		elseif d == 2 then l = l + mgSegment("split/split_rot/door", -l)
+		elseif d == 3 then l = l + mgSegment("split/split0/door", -l)
+		elseif d == 4 then l = l + mgSegment("split/solo/door", -l)
+		elseif d == 5 then l = l + mgSegment("split/split_rot/door", -l)
+		elseif d == 6 then l = l + mgSegment("split/split1/door", -l)
+		elseif d == 7 then l = l + mgSegment("split/split2/door", -l)
+		elseif d == 8 then l = l + mgSegment("split/split_start/door", -l)
+		elseif d == 9 then l = l + mgSegment("brownie/part1/door", -l)
+		elseif d == 10 then l = l + mgSegment("brownie/part3/door", -l)
+		elseif d == 11 then l = l + mgSegment("endless/space/door", -l)
+		elseif d == 12 then l = l + mgSegment("endless/wide/door", -l)
+		elseif d == 13 then l = l + mgSegment("endless/open/door", -l)
+		elseif d == 14 then l = l + mgSegment("endless/narrow/door", -l)
+		elseif d == 15 then l = l + mgSegment("cave/narrow/door", -l)
+		elseif d == 16 then l = l + mgSegment("cave/spin/door", -l)
+		elseif d == 17 then l = l + mgSegment("cave/hall/door", -l)
+		elseif d == 18 then l = l + mgSegment("cave/corridor/door", -l)
+		elseif d == 19 then l = l + mgSegment("cave2/narrow/door", -l)
+		elseif d == 20 then l = l + mgSegment("cave2/bottom/door", -l)
+		elseif d == 21 then l = l + mgSegment("cave2/top/door2", -l)
+		elseif d == 22 then l = l + mgSegment("cave2/top/door", -l)
+		elseif d == 23 then l = l + mgSegment("city/narrow/door", -l)
+		elseif d == 24 then l = l + mgSegment("city/path2/door", -l)
+		elseif d == 25 then l = l + mgSegment("city/fall/door", -l)
+		elseif d == 26 then l = l + mgSegment("city/path/door", -l)
+		elseif d == 27 then l = l + mgSegment("city/trench/door", -l)
+		elseif d == 28 then l = l + mgSegment("canyon/cave/door", -l)
+		elseif d == 29 then l = l + mgSegment("canyon/trail/door", -l)
+		elseif d == 30 then l = l + mgSegment("canyon/columns/door", -l)
+		elseif d == 31 then l = l + mgSegment("phosphor/part4/door", -l)
+		elseif d == 32 then l = l + mgSegment("phosphor/part2/door", -l)
+		elseif d == 33 then l = l + mgSegment("phosphor/part1/door", -l)
+		elseif d == 34 then l = l + mgSegment("phosphor/part3/door", -l)
+		elseif d == 35 then l = l + mgSegment("holodeck/rapid_door", -l)
+		elseif d == 36 then l = l + mgSegment("holodeck/calm_door", -l)
+		elseif d == 37 then l = l + mgSegment("holodeck/bonus_door", -l)
+		elseif d == 38 then l = l + mgSegment("holodeck/beat_door", -l)
+		elseif d == 39 then l = l + mgSegment("holodeck/bonus_door", -l)
+		elseif d == 40 then l = l + mgSegment("zen/space/door", -l)
+		elseif d == 41 then l = l + mgSegment("zen/open/door", -l)
+		elseif d == 42 then l = l + mgSegment("zen/open/door", -l)
+		elseif d == 43 then l = l + mgSegment("zen/narrow/door", -l)
+		elseif d == 44 then l = l + mgSegment("ocean/towers/door", -l)
+		elseif d == 45 then l = l + mgSegment("ocean/stairs/door", -l)
+		elseif d == 46 then l = l + mgSegment("ocean/sky/door", -l)
+		elseif d == 47 then l = l + mgSegment("ocean/tunnel/door", -l)
+		elseif d == 48 then l = l + mgSegment("night/part2/door", -l)
+		elseif d == 49 then l = l + mgSegment("night/part1/door", -l)
+		elseif d == 50 then l = l + mgSegment("night/part3/door", -l)
+		elseif d == 51 then l = l + mgSegment("hyperspace/fall/door", -l)
+		elseif d == 52 then l = l + mgSegment("hyperspace/orbit/door", -l)
+		elseif d == 53 then l = l + mgSegment("hyperspace/warp/door", -l)
+		elseif d == 54 then l = l + mgSegment("hyperspace/cruise/door", -l)
+		elseif d == 55 then l = l + mgSegment("basic/darker/door", -l)
+		elseif d == 56 then l = l + mgSegment("basic/basic/door", -l)
+		elseif d == 57 then l = l + mgSegment("basic/dark/door", -l)
+		elseif d == 58 then l = l + mgSegment("river/path2/door", -l)
+		elseif d == 59 then l = l + mgSegment("river/path/door", -l)
+		elseif d == 60 then l = l + mgSegment("river/tunnel/door", -l)
+	end
+
+	mgLength(l)
+end
+
+function tick()
+end

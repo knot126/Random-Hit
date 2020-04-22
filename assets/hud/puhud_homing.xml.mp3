@@ -1,0 +1,3 @@
+<ui texture="puhud.png" selected="puhud_select.png" coords="768 0 1024 256">	
+	<rect coords="798 30 993 225" selected="true" cmd="game.powerup homing" />
+</ui>

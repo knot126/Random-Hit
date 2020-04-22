@@ -1,0 +1,7 @@
+<materials>
+	<material name="steel" density="1" friction="0.9" color="1 1 1" type="metal"/>
+	<material name="wood" density="1" friction="0.9" color="0.8 0.7 0.6" type="marble" forcelimit="0.05"/>
+	<material name="glass" density="1" friction="0.7" restitution="0.3" color="0.5 1.0 0.5" type="glass" forcelimit="0.1"/>
+	<material name="door" density="100" static="2" friction="0.7" color="0.5 0.5 0.5" type="metal" category="2" mask="125"/>
+</materials>
+

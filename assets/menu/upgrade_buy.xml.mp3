@@ -1,0 +1,4 @@
+<ui texture="upgrade_buy.png" shade="true">	
+	<rect coords="0 0 586 256" cmd="game.purchase premium" />
+	<outside cmd="script:hideupgrade"/>
+</ui>

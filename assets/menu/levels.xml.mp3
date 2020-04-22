@@ -1,0 +1,14 @@
+<ui texture="levels.png" selected="levels_select.png">	
+	<rect coords="122 386 250 566" cmd="script:level 1"/>
+	<rect coords="253 386 380 566" cmd="script:level 2"/>
+	<rect coords="383 386 510 566" cmd="script:level 3"/>
+	<rect coords="513 386 640 566" cmd="script:level 4"/>
+	<rect coords="643 386 770 566" cmd="script:level 5"/>
+	<rect coords="773 386 902 566" cmd="script:level 6"/>
+	<rect coords="122 567 250 740" cmd="script:level 7"/>
+	<rect coords="253 567 380 740" cmd="script:level 8"/>
+	<rect coords="383 567 510 740" cmd="script:level 9"/>
+	<rect coords="513 567 640 740" cmd="script:level 10"/>
+	<rect coords="643 567 770 740" cmd="script:level 11"/>
+	<rect coords="773 567 902 740" cmd="script:level 12"/>
+</ui>

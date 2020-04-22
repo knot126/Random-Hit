@@ -1,0 +1,5 @@
+<ui texture="rate.png" selected="rate_select.png">	
+	<rect coords="130 350 620 505" cmd="script:rate ; script:hiderate"/>
+	<rect coords="190 520 555 650" cmd="script:hiderate"/>
+	<outside cmd="script:hiderate"/>
+</ui>

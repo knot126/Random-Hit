@@ -1,0 +1,5 @@
+<ui texture="menubg.png" selected="menubg_select.jpg">	
+	<rect coords="0 618 150 768" cmd="level.start test"/>
+	<rect coords="810 0 1010 100" cmd="script:showoptions"/>
+</ui>
+

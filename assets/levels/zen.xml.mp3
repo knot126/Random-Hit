@@ -1,0 +1,22 @@
+<level>
+	<room type="zen/narrow0" rot="false"/>
+	<room type="zen/open0"/>
+	<room type="zen/space0"/>
+	<room type="zen/open1"/>
+	<room type="zen/space0"/>
+	<room type="zen/open0"/>
+	<room type="zen/narrow0"/>
+	<room type="zen/space0"/>
+	<room type="zen/narrow0"/>
+	<room type="zen/open1"/>
+	<room type="zen/space0"/>
+	<room type="zen/space0"/>
+	<room type="zen/narrow0"/>
+	<room type="zen/open0"/>
+	<room type="zen/space0"/>
+	<room type="zen/narrow0"/>
+	<room type="zen/space0"/>
+	<room type="zen/open1"/>
+	<room type="zen/space0"/>
+	<room type="zen/narrow0"/>
+</level>

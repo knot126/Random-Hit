@@ -1,0 +1,3 @@
+<ui texture="scorebutton.png" shade="true">	
+	<rect coords="0 0 1008 133" cmd="script:showscore" />
+</ui>

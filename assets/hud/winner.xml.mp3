@@ -1,0 +1,3 @@
+<ui texture="winner.png" shade="true">	
+	<outside cmd="script:hidewinner ; game.menu"/>
+</ui>

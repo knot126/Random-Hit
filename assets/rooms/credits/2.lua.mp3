@@ -1,0 +1,23 @@
+function init()
+	pLast = mgGetBool("last", false)
+
+	if pLast then
+		mgMusic("silent")
+	else
+		mgMusic("bowling")
+	end
+	mgReverb(0.2, 0.8, 0.3)
+	mgEcho(0.3, 0.2, 0.5, 0.5)
+	mgFogColor(.1, .1, .1, .9, .9, .8)
+	mgGravity(0.5)	
+	
+	l = 0
+	
+	l = l + mgSegment("credits/basketball", -l)	
+	l = l + mgSegment("credits/basketball", -l)	
+		
+	mgLength(l)
+end
+
+function tick()
+end

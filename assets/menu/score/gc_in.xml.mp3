@@ -1,0 +1,6 @@
+<ui texture="score/gc_in.png" selected="score/gc_select.png">	
+	<rect coords="0 0 640 141" cmd="game.showLeaderboards"/>
+	<rect coords="640 0 1330 141" cmd="game.showAchievements"/>
+	<rect coords="1330 0 1800 141" cmd="game.signOut"/>
+	<outside cmd="script:hidescore"/>
+</ui>

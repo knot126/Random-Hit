@@ -1,0 +1,38 @@
+<segment size="12 10 16" template="ocean_s">
+	<box size="0.5 4.5 1.375" pos="0.0 6.5 -1.375" hidden="0" template="ocean_top"/>
+	<box size="0.5 1.5 1.875" pos="0.0 -1.5 -1.875" hidden="0" template="ocean"/>
+	<box size="7.0 7.0 1.875" pos="-7.75 4.0 -1.875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="7.0 7.0 1.875" pos="7.75 4.0 -1.875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<decal pos="-2.1875 -1.34796 -5.9375" hidden="0" tile="11" rot="0 0 -.5" color=".6 .9 1 .8" size="2 2"/>
+	<decal pos="1.1875 -0.59796 -5.9375" hidden="0" tile="11" rot="0 0 .5" color=".6 .9 1 .8"/>
+	<box size="6.125 7.0 1.375" pos="-8.875 4.0 -5.25" hidden="0" template="ocean_wall"/>
+	<box size="6.25 7.0 1.375" pos="8.75 4.0 -5.25" hidden="0" template="ocean_wall"/>
+	<box size="0.5 1.5 1.5" pos="-0.125 -1.5 -5.25" hidden="0" template="ocean"/>
+	<box size="5.75 7.0 1.0" pos="-9.125 4.0 -7.75" hidden="0" template="ocean_wall"/>
+	<box size="5.75 7.0 1.0" pos="9.125 4.0 -7.75" hidden="0" template="ocean_wall"/>
+	<box size="0.5 1.5 1.0625" pos="0.125 -1.5 -7.8125" hidden="0" template="ocean"/>
+	<box size="0.5 1.5 1.0" pos="0.25 -1.5 -10.0" hidden="0" template="ocean"/>
+	<obstacle pos="1.75 -0.98241 -11.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<obstacle pos="-1.75 -0.98241 -11.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<obstacle pos="-2.625 -0.98241 -11.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<obstacle pos="2.625 -0.98241 -11.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<box size="1.125 3.625 0.5" pos="2.25 -4.625 -11.625" hidden="0" template="ocean_glow" tileSize="10 15 10"/>
+	<box size="1.125 3.625 0.5" pos="-2.25 -4.625 -11.625" hidden="0" template="ocean_glow" tileSize="10 15 10"/>
+	<obstacle pos="-1.875 0.01759 -12.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<obstacle pos="-2.75 0.01759 -12.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<obstacle pos="1.875 0.01759 -12.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<obstacle pos="2.75 0.01759 -12.625" hidden="0" template="ocean_glass" type="scoretop" group="1"/>
+	<powerup pos="1.6875 3.1875 -12.8125" hidden="0" type="ballfrenzy"/>
+	<box size="0.5 1.5 1.0" pos="0.125 -1.5 -12.125" hidden="0" template="ocean"/>
+	<box size="1.125 4.125 0.5" pos="-2.25 -4.125 -12.625" hidden="0" template="ocean_glow" tileSize="10 15 10"/>
+	<box size="1.125 4.125 0.5" pos="2.25 -4.125 -12.625" hidden="0" template="ocean_glow" tileSize="10 15 10"/>
+	<box size="5.75 9.625 1.0" pos="9.125 1.375 -12.125" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="5.75 9.625 1.0" pos="9.125 1.375 -12.125" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="5.75 9.625 1.0" pos="-9.125 1.375 -12.125" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="0.5625 0.4375 0.5" pos="1.6875 2.4375 -12.875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="0.5 4.5 1.3125" pos="-0.125 6.5 -14.6875" hidden="0" template="ocean_top"/>
+	<box size="6.875 9.5 1.3125" pos="-8.0 1.5 -14.6875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="0.5 1.5 1.3125" pos="-0.125 -1.5 -14.6875" hidden="0" template="ocean"/>
+	<box size="6.875 9.5 1.3125" pos="8.0 1.5 -14.6875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+</segment>
+

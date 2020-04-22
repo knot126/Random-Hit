@@ -1,0 +1,4 @@
+<ui texture="play_menu.png" selected="play_menu_select.png">	
+	<rect coords="166 410 578 596" cmd="script:play"/>
+	<outside cmd="script:hideplaymenu"/>
+</ui>

@@ -1,0 +1,4 @@
+<ui texture="newgamemodes.png" shade="true">	
+	<rect coords="0 0 570 670" cmd="script:hidenew ; script:showmode"/>
+	<outside cmd="script:hidenew"/>
+</ui>

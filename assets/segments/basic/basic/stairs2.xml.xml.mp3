@@ -1,0 +1,44 @@
+<segment size="12 10 16" template="basic_s">
+	<box size="0.5 0.0625 0.5" pos="-2.5 0.0625 -4.5" hidden="0" template="basic"/>
+	<box size="4.0 0.5 3.0" pos="0.0 -0.5 -3.0" hidden="1" template="basic" reflection="1"/>
+	<box size="0.5 0.375 0.5" pos="1.5 -0.625 -6.5" hidden="0" template="basic" reflection="1"/>
+	<box size="0.5 0.25 0.5" pos="2.5 -0.75 -6.5" hidden="0" template="basic" reflection="1"/>
+	<powerup pos="2.5 0.75 -7.5" hidden="0" type="balls"/>
+	<box size="2.0 0.5 1.0" pos="-1.0 -0.5 -7.0" hidden="0" template="basic" reflection="1"/>
+	<box size="0.5 0.375 0.5" pos="2.5 -0.625 -7.5" hidden="0" template="basic" reflection="1"/>
+	<box size="0.5 0.25 0.5" pos="1.5 -0.75 -7.5" hidden="0" template="basic" reflection="1"/>
+	<box size="0.5 0.0625 0.5" pos="2.5 0.0625 -8.5" hidden="0" template="basic"/>
+	<obstacle pos="-0.5 0.3631 -9.5" hidden="0" type="scorestar" template="basic_st"/>
+	<obstacle pos="-1.5 0.4881 -9.5" hidden="0" type="scorestar" template="basic_st"/>
+	<obstacle pos="0.5 0.2381 -9.5" hidden="0" type="scorestar" template="basic_st" mode="1"/>
+	<box size="0.5 0.25 0.5" pos="-1.5 0.25 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.5 0.125 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="-0.5 0.1875 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="-2.5 0.1875 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 2.5 6.5" pos="-3.5 2.5 -6.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 0.0625 -12.5" hidden="0" template="basic"/>
+	<box size="4.0 0.5 6.5" pos="0.0 5.5 -6.5" hidden="1" template="basic"/>
+	<box size="4.0 0.5 2.5" pos="0.0 -0.5 -10.5" hidden="0" template="basic" reflection="1"/>
+	<box size="0.5 3.0 6.5" pos="3.5 2.0 -6.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="2.5 0.125 -12.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-2.5 0.0625 -12.5" hidden="0" template="basic"/>
+	<decal pos="3.3125 0.52704 -13.4375" hidden="0" tile="11" size="1.5 1.5" rot="0 0 .4"/>
+	<decal pos="-2.9375 0.52704 -13.4375" hidden="0" tile="11" size="1.5 1.5" rot="0 0 .4"/>
+	<box size="0.5 0.1875 0.5" pos="2.5 0.1875 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.5 4.875 -15.5" hidden="0" template="basic"/>
+	<box size="7.0 2.0 0.5" pos="0.0 -2.0 -15.5" hidden="0" template="basic" reflection="1"/>
+	<box size="2.0 2.5 0.5" pos="-5.0 2.5 -15.5" hidden="0" template="basic"/>
+	<box size="2.0 2.5 0.5" pos="5.0 2.5 -15.5" hidden="0" template="basic"/>
+	<box size="7.0 2.5 0.5" pos="0.0 7.5 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 0.0625 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 0.0625 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-1.5 4.875 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 4.9375 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="-2.5 4.8125 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.25 0.5" pos="-2.5 0.25 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="2.5 4.875 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.5 0.125 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 4.9375 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-1.5 0.125 -15.5" hidden="0" template="basic"/>
+</segment>
+

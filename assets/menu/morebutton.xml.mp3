@@ -1,0 +1,3 @@
+<ui texture="morebutton.png" shade="true">	
+	<rect coords="0 0 375 133" cmd="script:showmore" />
+</ui>

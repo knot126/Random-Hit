@@ -1,0 +1,31 @@
+<segment size="12 10 16" template="ocean_s">
+	<box size="0.5 4.5 1.875" pos="0.0 6.5 -1.875" hidden="0" template="ocean_top"/>
+	<box size="7.0 7.0 1.875" pos="7.75 4.0 -1.875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="7.0 7.0 1.875" pos="-7.75 4.0 -1.875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="0.5 1.5 2.0" pos="0.0 -1.5 -2.0" hidden="0" template="ocean"/>
+	<box size="0.5 4.5 0.375" pos="-0.125 6.5 -4.125" hidden="0" template="ocean_top"/>
+	<decal pos="-1.9375 -0.09796 -4.3125" hidden="0" tile="11" rot="0 0 -.5" color=".6 .9 1 .8" size="2 2"/>
+	<decal pos="1.0625 0.90204 -4.4375" hidden="0" tile="11" rot="0 0 .5" color=".6 .9 1 .8"/>
+	<box size="6.375 7.0 1.375" pos="8.625 4.0 -5.25" hidden="0" template="ocean_wall"/>
+	<box size="6.0 7.0 1.375" pos="-9.0 4.0 -5.25" hidden="0" template="ocean_wall"/>
+	<box size="0.5 1.5 1.1875" pos="-0.125 -1.5 -5.5625" hidden="0" template="ocean"/>
+	<box size="0.3125 1.5 0.3125" pos="-0.5625 -1.5 -7.1875" hidden="0" template="ocean_glow"/>
+	<obstacle pos="-0.3125 4.99887 -7.4375" hidden="0" template="ocean_glass" type="dropblock"/>
+	<box size="0.4375 1.5 0.5" pos="-0.6875 -1.5 -8.25" hidden="0" template="ocean"/>
+	<box size="6.3125 7.0 1.0" pos="8.5625 4.0 -7.75" hidden="0" template="ocean_wall"/>
+	<box size="0.6875 1.5 1.0" pos="0.5625 -1.5 -7.75" hidden="0" template="ocean"/>
+	<box size="5.9375 7.0 1.0" pos="-8.9375 4.0 -7.75" hidden="0" template="ocean_wall"/>
+	<obstacle pos="0.5625 6.87387 -8.9375" hidden="0" template="ocean_glass" type="dropblock"/>
+	<box size="0.3125 1.5 0.3125" pos="0.9375 -1.5 -9.1875" hidden="0" template="ocean_glow"/>
+	<box size="0.6875 1.5 0.8125" pos="-0.1875 -1.5 -9.8125" hidden="0" template="ocean"/>
+	<obstacle pos="0.1875 6.87387 -10.4375" hidden="0" template="ocean_glass" type="dropblock"/>
+	<box size="0.3125 1.5 0.3125" pos="0.1875 -1.5 -11.3125" hidden="0" template="ocean_glow"/>
+	<box size="6.0625 8.9375 1.0" pos="-8.8125 2.0625 -12.125" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="0.5 1.5 0.6875" pos="0.125 -1.5 -12.4375" hidden="0" template="ocean"/>
+	<box size="6.375 9.1875 1.0" pos="8.5 1.8125 -12.125" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="1.0 4.5 1.3125" pos="0.0 6.5 -14.6875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="0.5 1.5 1.3125" pos="-0.125 -1.5 -14.6875" hidden="0" template="ocean"/>
+	<box size="6.875 9.125 1.3125" pos="8.0 1.875 -14.6875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+	<box size="6.875 9.125 1.3125" pos="-8.0 1.875 -14.6875" hidden="0" template="ocean_wall" tileSize="10 15 10"/>
+</segment>
+

@@ -1,0 +1,33 @@
+<segment size="12 10 16" template="basic_s">
+	<box size="0.5 0.0625 0.5" pos="-1.5 0.0625 -3.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-1.5 0.125 -4.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-2.5 0.0625 -4.5" hidden="0" template="basic"/>
+	<obstacle pos="-1.5 0.3631 -5.5" hidden="0" type="scorestar" template="basic_st" mode="6"/>
+	<box size="0.5 0.1875 0.5" pos="-1.5 0.1875 -5.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 0.0625 -5.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-2.5 0.125 -5.5" hidden="0" template="basic"/>
+	<obstacle pos="0.5 0.2381 -9.5" hidden="0" type="scorestar" template="basic_st"/>
+	<obstacle pos="1.5 0.3631 -9.5" hidden="0" type="scorestar" template="basic_st"/>
+	<obstacle pos="-0.5 0.1131 -9.5" hidden="0" type="scorestar" template="basic_st" mode="1"/>
+	<box size="0.5 0.1875 0.5" pos="2.5 0.1875 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.5 0.125 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="1.5 0.1875 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 0.0625 -9.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-1.5 4.875 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 0.0625 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.25 0.5" pos="-2.5 0.25 -15.5" hidden="0" template="basic"/>
+	<box size="4.0 0.5 8.0" pos="0.0 -0.5 -8.0" hidden="0" template="basic" reflection="1"/>
+	<box size="0.5 2.5 8.0" pos="-3.5 2.5 -8.0" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 0.0625 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 2.5 8.0" pos="3.5 2.5 -8.0" hidden="0" template="basic"/>
+	<box size="4.0 0.5 8.0" pos="0.0 5.5 -8.0" hidden="1" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-1.5 0.125 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 4.9375 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.5 0.125 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="2.5 0.1875 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="-2.5 4.8125 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.5 4.875 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="2.5 4.875 -15.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 4.9375 -15.5" hidden="0" template="basic"/>
+</segment>
+

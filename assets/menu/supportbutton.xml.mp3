@@ -1,0 +1,4 @@
+<ui texture="supportbutton.png" selected="supportbutton_select.png">	
+	<rect coords="0 0 485 160" cmd="script:support" />
+	<outside cmd="script:hidehelp"/>
+</ui>

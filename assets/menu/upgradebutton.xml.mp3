@@ -1,0 +1,3 @@
+<ui texture="upgradebutton.png" shade="true">	
+	<rect coords="0 0 468 468" cmd="script:showupgrade" />
+</ui>

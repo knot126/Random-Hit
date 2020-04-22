@@ -1,0 +1,3 @@
+<ui texture="upgrade_restore.png" shade="true">	
+	<rect coords="0 0 555 105" cmd="game.restore" />
+</ui>

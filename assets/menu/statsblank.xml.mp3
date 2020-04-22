@@ -1,0 +1,3 @@
+<ui texture="statsblank.png" shade="true">	
+	<rect coords="0 0 32 256" cmd="script:hidescore ; script:showupgrade"/>
+</ui>

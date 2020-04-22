@@ -1,0 +1,3 @@
+<ui texture="pause_rot.png" selected="pause_rot.png">	
+	<rect coords="0 0 128 128" cmd="script:showpausemenu"/>
+</ui>

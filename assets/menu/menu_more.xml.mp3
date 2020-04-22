@@ -1,0 +1,9 @@
+<ui texture="menu_more.png" selected="menu_more_select.png">	
+	<rect coords="235 112 771 238" 	cmd="level.start level:credits ; script:hidemore"/>
+	<rect coords="235 239 797 364" 	cmd="script:rate"/>
+	<rect coords="235 365 668 489" 	cmd="script:facebook"/>
+	<rect coords="235 490 576 614" 	cmd="script:twitter"/>
+	<rect coords="235 615 713 739" 	cmd="script:website"/>
+	<rect coords="235 740 732 864" 	cmd="level.start level:moregames ; script:hidemore"/>
+	<outside cmd="script:hidemore"/>
+</ui>

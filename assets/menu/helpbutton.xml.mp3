@@ -1,0 +1,3 @@
+<ui texture="helpbutton.png" shade="true">	
+	<rect coords="0 0 277 100" cmd="script:showhelp" />
+</ui>

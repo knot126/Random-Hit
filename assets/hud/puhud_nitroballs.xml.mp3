@@ -1,0 +1,3 @@
+<ui texture="puhud.png" selected="puhud_select.png" coords="512 0 768 256">
+	<rect coords="542 30 737 225" selected="true" cmd="game.powerup nitroballs"/>
+</ui>

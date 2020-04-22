@@ -1,0 +1,8 @@
+<ui texture="modebutton.png" shade="true">	
+	<rect id="1" coords="0 0 580 134" cmd="script:showmode" />
+	<rect id="3" coords="0 135 580 268" cmd="script:showmode" />
+	<rect id="0" coords="0 269 580 403" cmd="script:showmode" />
+	<rect id="2" coords="0 404 580 538" cmd="script:showmode" />
+	<rect id="4" coords="0 539 580 673" cmd="script:showmode" />
+	<rect id="5" coords="0 674 580 808" cmd="script:showmode" />
+</ui>

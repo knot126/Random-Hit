@@ -1,0 +1,4 @@
+<ui texture="gameover_continue.png" selected="gameover_continue_select.png">	
+	<rect coords="200 100 440 340" cmd="script:hidegameover ; script:gameover_continue"/>
+	<outside cmd="script:hidegameover"/>
+</ui>

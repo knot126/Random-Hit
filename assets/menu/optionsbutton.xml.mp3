@@ -1,0 +1,3 @@
+<ui texture="optionsbutton.png" selected="optionsbutton.png" shade="true">	
+	<rect coords="0 0 495 133" cmd="script:showoptions" />
+</ui>

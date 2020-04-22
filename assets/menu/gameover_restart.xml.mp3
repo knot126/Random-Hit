@@ -1,0 +1,4 @@
+<ui texture="gameover_restart.png" selected="gameover_restart_select.png">	
+	<rect coords="0 0 560 193" cmd="script:hidegameover ; script:gameover_restart"/>
+	<outside cmd="script:hidegameover"/>
+</ui>

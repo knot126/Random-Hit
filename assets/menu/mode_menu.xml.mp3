@@ -1,0 +1,9 @@
+<ui texture="mode_menu.png" selected="mode_menu_select.png">	
+	<rect group="1" id="3" coords="50 280 905 615" cmd="script:mode zen" />
+	<rect group="1" id="0" coords="906 280 1770 615" cmd="script:mode training" />
+	<rect group="1" id="4" coords="1820 280 2680 615" cmd="script:mode versus" />
+	<rect group="1" id="1" selected="true" coords="50 616 905 960" cmd="script:mode classic" />
+	<rect group="1" id="2" coords="906 616 1770 960" cmd="script:mode expert" />
+	<rect group="1" id="5" coords="1820 616 2680 960" cmd="script:mode coop" />
+	<outside cmd="script:hidemode"/>
+</ui>

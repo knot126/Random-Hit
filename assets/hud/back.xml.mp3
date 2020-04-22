@@ -1,0 +1,3 @@
+<ui texture="back.png" shade="true">	
+	<rect coords="0 0 270 195" cmd="game.menu"/>
+</ui>

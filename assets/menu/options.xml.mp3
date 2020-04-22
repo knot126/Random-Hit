@@ -1,0 +1,6 @@
+<ui texture="options.png" selected="options_select.png">	
+	<rect coords="75 220 420 410" cmd="audio.togglemusic ; game.saveConfig" />
+	<rect coords="435 220 780 410" cmd="audio.togglesound ; game.saveConfig" />
+	<rect coords="188 574 661 760" cmd="game.togglegraphics ; game.saveConfig" />
+	<outside cmd="script:hideoptions"/>
+</ui>

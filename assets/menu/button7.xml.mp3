@@ -1,0 +1,3 @@
+<ui texture="button.png" selected="button_select.png">		
+	<rect coords="0 0 294 384" cmd="script:level 6"/>
+</ui>

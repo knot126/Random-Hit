@@ -1,0 +1,4 @@
+<ui texture="resume.png" selected="resume_select.png">	
+	<rect coords="71 179 575 367" cmd="script:exit ; game.menu"/>
+	<rect coords="71 379 675 567" cmd="script:hideresume"/>
+</ui>

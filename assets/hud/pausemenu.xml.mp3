@@ -1,0 +1,6 @@
+<ui texture="pausemenu.png" selected="pausemenu_select.png">	
+	<rect coords="114 151 668 349" cmd="script:exit; game.menu"/>
+	<rect coords="114 350 858 548" cmd="level.restart"/>
+	<rect coords="114 549 788 750" cmd="script:hidepausemenu"/>
+	<outside cmd="script:hidepausemenu"/>
+</ui>

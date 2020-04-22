@@ -1,0 +1,198 @@
+<segment size="12 10 32" template="basic_s">
+	<box size="0.5 1.25 0.5" pos="1.0 -4.75 -4.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.25 0.5" pos="-0.5 -4.75 -5.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.25 0.5" pos="-2.0 -4.75 -6.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.4375 0.5" pos="-0.5 -4.5625 -6.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.4375 0.5" pos="0.5 -4.5625 -6.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.4375 0.5" pos="1.5 -4.5625 -7.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.4375 0.5" pos="-0.5 -4.5625 -7.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.5625 0.5" pos="0.5 -4.4375 -7.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.9375 0.5" pos="0.5 -4.0625 -8.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0 0.5" pos="-0.5 -4.0 -8.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.25 0.5" pos="-2.5 -4.75 -8.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.4375 0.5" pos="2.5 -4.5625 -8.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.4375 0.5" pos="-1.5 -4.5625 -8.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.5625 0.5" pos="1.5 -4.4375 -8.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.5625 0.5" pos="-1.5 -4.4375 -9.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.375 0.5" pos="1.5 -4.625 -9.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="0.5 -3.9375 -9.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="-0.5 -3.875 -9.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.25 0.5" pos="0.5 -3.75 -10.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.375 0.5" pos="1.5 -4.625 -10.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.25 0.5" pos="-1.5 -4.75 -10.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="-0.5 -3.8125 -10.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.3125 0.5" pos="-0.5 -3.6875 -11.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.3125 0.5" pos="0.5 -3.6875 -11.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.3125 0.5" pos="0.5 -3.6875 -12.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.3125 0.5" pos="-0.5 -3.6875 -12.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.4375 0.5" pos="-0.5 -3.5625 -13.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.3125 0.5" pos="1.5 -4.6875 -13.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.3125 0.5" pos="0.5 -3.6875 -13.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="-7.5 -1.5 -13.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="-7.5 6.5 -13.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="-7.5 7.5 -13.875" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="-7.5 8.5 -13.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="-7.5 1.5 -13.875" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="-7.5 0.5 -13.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="-7.5 -0.5 -13.875" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="-7.5 2.5 -13.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.1875 1.5 0.5" pos="-6.8125 -4.5 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.5 0.5" pos="0.5 -3.5 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.125 1.0 0.5" pos="-6.875 -2.0 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.1875 0.5 0.5" pos="-6.8125 -0.5 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.0625 0.5 0.5" pos="-6.9375 0.5 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.0625 0.5 0.5" pos="-6.9375 5.5 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.1875 0.5 0.5" pos="-6.8125 6.5 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.0625 0.5 0.5" pos="-6.9375 7.5 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 9.5625 0.5" pos="-7.5 3.5625 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.6875 0.5" pos="1.5 -4.3125 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.25 0.5" pos="-1.5 -4.75 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.5625 0.5" pos="-0.5 -3.4375 -14.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.25 0.5" pos="-3.0 -4.75 -15.0" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="0.5 9.125 -15.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.5625 0.5" pos="-0.5 -3.4375 -15.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.9375 0.5" pos="-1.5 -4.0625 -15.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.5625 0.5" pos="0.5 -3.4375 -15.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="-0.5 10.75 -15.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="1.5 -3.9375 -15.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="7.5 1.5 -16.875" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="7.5 2.5 -16.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.25 0.5" pos="1.5 -3.75 -16.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="0.5 8.75 -16.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="-0.5 9.5 -16.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="-0.5 -3.25 -16.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="-1.5 -3.9375 -16.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="0.5 -3.25 -16.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.9375 0.5" pos="-2.5 -5.0625 -16.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="7.5 -0.5 -16.875" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="7.5 0.5 -16.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="7.5 7.5 -16.875" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="7.5 6.5 -16.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="7.5 -1.5 -16.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="7.5 8.5 -16.9375" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.5625 0.5" pos="2.5 -4.4375 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.8125 0.5" pos="-0.5 8.3125 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.875 0.5" pos="0.5 8.5 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.875 0.5" pos="0.5 -3.125 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="1.5 -3.8125 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.25 0.5" pos="-1.5 -3.75 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.1875 0.5" pos="-2.5 -4.8125 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.0625 0.5 0.5" pos="6.9375 7.5 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.1875 0.5 0.5" pos="6.8125 6.5 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.0625 0.5 0.5" pos="6.9375 5.5 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.0625 0.5 0.5" pos="6.9375 0.5 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.1875 0.5 0.5" pos="6.8125 -0.5 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.125 1.0 0.5" pos="6.875 -2.0 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.1875 1.5 0.5" pos="6.8125 -4.5 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 9.5625 0.5" pos="7.5 3.5625 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.8125 0.5" pos="-0.5 -3.1875 -17.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="2.5 -3.9375 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="-1.5 -3.8125 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 3.0 0.5" pos="-0.5 -3.0 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.4375 0.5" pos="-3.5 -4.5625 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.9375 0.5" pos="0.5 -3.0625 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.6875 0.5" pos="-2.5 -4.3125 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 3.0 0.5" pos="-0.5 8.125 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.9375 0.5" pos="0.5 8.1875 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.9375 0.5" pos="-5.5 -5.0625 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.3125 0.5" pos="1.5 -3.6875 -18.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="1.5 -3.25 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.75 0.5" pos="-3.5 -4.25 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="-1.5 -3.25 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.625 0.5" pos="3.5 -4.375 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.3125 0.5" pos="-2.5 -3.6875 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="-1.5 9.75 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="2.5 -3.8125 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.125 0.5" pos="5.5 -4.875 -19.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="5.5 4.5 -20.9375" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.0625" pos="1.5 2.5 -20.9375" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.0625" pos="4.5 1.5 -20.9375" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.1875" pos="-3.5 -0.5 -20.8125" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.125" pos="-7.5 2.5 -20.875" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.1875" pos="-5.5 1.5 -20.8125" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.25" pos="-5.5 2.5 -20.75" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.0625" pos="-5.5 3.5 -20.9375" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.125" pos="-4.5 2.5 -20.875" hidden="0" template="basic_start2"/>
+	<box size="0.5 2.5625 0.5" pos="-2.5 -3.4375 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="5.5 -3.9375 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="-7.5 -3.9375 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="-5.5 -3.9375 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="-6.5 -3.8125 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="-4.5 -3.8125 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.9375 0.5" pos="-1.5 -3.0625 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.5625 0.5" pos="2.5 -3.4375 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="3.5 -3.8125 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.1875" pos="-2.5 4.5 -20.8125" hidden="0" template="basic_start2"/>
+	<box size="0.5 2.3125 0.5" pos="-3.5 -3.6875 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="2.5 0.75 -20.875" hidden="0" template="basic_start2"/>
+	<box size="0.5 1.9375 0.5" pos="-12.5 -4.0625 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.6875 0.5" pos="-11.5 -4.3125 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.9375 0.5" pos="6.5 -4.0625 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.125" pos="2.5 3.5 -20.875" hidden="0" template="basic_start2"/>
+	<box size="0.5 1.75 0.5" pos="-10.5 -4.25 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.1875" pos="-2.5 0.5 -20.8125" hidden="0" template="basic_start2"/>
+	<box size="0.5 2.25 0.5" pos="4.5 -3.75 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="1.0 3.0 1.0" pos="0.0 8.0 -20.0" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.625 0.5" pos="-9.5 -4.375 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.8125 0.5" pos="10.5 -4.1875 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.875 0.5" pos="9.5 -4.125 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.75 0.5" pos="8.5 -4.25 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.625 0.5" pos="7.5 -4.375 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 1.9375 0.5" pos="-8.5 -4.0625 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="1.0 3.0 1.0" pos="0.0 -3.0 -20.0" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="1.5 9.125 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 2.75 0.5" pos="-2.5 10.75 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="0.5 0.5 0.0625" pos="6.5 1.5 -20.9375" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.125" pos="6.5 3.5 -20.875" hidden="0" template="basic_start2"/>
+	<box size="0.5 0.5 0.1875" pos="5.5 3.5 -20.8125" hidden="0" template="basic_start2"/>
+	<box size="0.5 2.9375 0.5" pos="1.5 -3.0625 -20.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="27.0 0.4375 11.5" pos="0.0 -6.5625 -9.5" hidden="0" template="basic_start2" reflection="1"/>
+	<box size="12.0 8.5 0.5" pos="15.0 2.5 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 1.0 0.5" pos="2.5 4.0 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.0625 0.25 0.5" pos="-2.9375 1.25 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 0.5 0.5" pos="-2.5 0.5 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 0.0625 0.5" pos="0.5 0.0625 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 0.625 0.5" pos="2.5 0.625 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 0.75 0.5" pos="1.5 0.75 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 0.8125 0.5" pos="-2.5 4.1875 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 0.125 0.5" pos="0.5 4.875 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 0.0625 -21.5" hidden="0" template="basic_start"/>
+	<box size="12.0 8.5 0.5" pos="-15.0 2.5 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 1.25 0.5" pos="-1.5 3.75 -21.5" hidden="0" template="basic_start"/>
+	<box size="3.0 3.0 0.5" pos="0.0 -3.0 -21.5" hidden="0" template="basic_start"/>
+	<box size="3.0 3.0 0.5" pos="0.0 8.0 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.0625 0.5 0.5" pos="2.9375 2.5 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 1.1875 0.5" pos="-1.5 1.1875 -21.5" hidden="0" template="basic_start"/>
+	<box size="0.5 1.6875 0.5" pos="1.5 3.3125 -21.5" hidden="0" template="basic_start"/>
+	<decal pos="2.8125 2.02704 -22.0625" hidden="0" tile="11" size="1.5 1.5"/>
+	<decal pos="-2.4375 1.52704 -22.0625" hidden="0" tile="11" size="1.5 1.5"/>
+	<decal pos="0.0625 0.52704 -22.1875" hidden="1" tile="11" size="1.5 1.5" rot="0 0 .4"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 0.0625 -27.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-0.5 0.125 -28.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="0.5 0.0625 -28.5" hidden="0" template="basic"/>
+	<obstacle pos="-0.5 0.3631 -29.5" hidden="0" type="scorestar" template="basic_st"/>
+	<obstacle pos="0.5 0.3631 -29.5" hidden="0" type="scorestar" template="basic_st"/>
+	<box size="0.5 0.1875 0.5" pos="-0.5 0.1875 -29.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-1.5 0.0625 -29.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="0.5 0.1875 -29.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.0 0.125 -30.5" hidden="0" template="basic"/>
+	<obstacle pos="0.0 0.3631 -31.5" hidden="0" type="scorestar" template="basic_st" mode="1"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 0.0625 -31.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="0.5 4.875 -31.5" hidden="1" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 4.9375 -31.5" hidden="1" template="basic"/>
+	<box size="0.5 0.25 0.5" pos="-2.5 0.25 -31.5" hidden="0" template="basic"/>
+	<box size="0.5 0.0625 0.5" pos="-0.5 4.9375 -31.5" hidden="1" template="basic"/>
+	<box size="0.5 2.5 5.0" pos="-3.5 2.5 -27.0" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="2.5 4.875 -31.5" hidden="1" template="basic"/>
+	<box size="4.0 0.5 5.0" pos="0.0 -0.5 -27.0" hidden="0" template="basic" reflection="1"/>
+	<box size="4.0 0.5 5.0" pos="0.0 5.5 -27.0" hidden="1" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="-2.5 4.8125 -31.5" hidden="1" template="basic"/>
+	<box size="0.5 2.5 5.0" pos="3.5 2.5 -27.0" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-1.5 0.125 -31.5" hidden="0" template="basic"/>
+	<box size="0.5 0.125 0.5" pos="-1.5 4.875 -31.5" hidden="1" template="basic"/>
+	<box size="0.25 0.0625 0.5" pos="0.75 0.0625 -31.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="0.0 0.1875 -31.5" hidden="0" template="basic"/>
+	<box size="0.25 0.0625 0.5" pos="-0.75 0.0625 -31.5" hidden="0" template="basic"/>
+	<box size="0.5 0.1875 0.5" pos="2.5 0.1875 -31.5" hidden="0" template="basic"/>
+</segment>
+

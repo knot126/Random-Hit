@@ -1,0 +1,4 @@
+<ui texture="debug.png" selected="debug.png" shade="true">	
+	<rect coords="0 0 227 70" cmd="script:showdebug"/>
+</ui>
+
