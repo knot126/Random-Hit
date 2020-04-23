@@ -677,7 +677,8 @@ function drawWorld()
 	
 	mgSetAlpha(dbgButton, t*0.3)
 	mgSetAlpha(optionsButton, t)
-	mgDraw(dbgButton)
+	-- Debug menu doesn't serve a purpose yet
+	-- mgDraw(dbgButton)
 	mgSetAlpha(optionsButton, t)
 	mgDraw(optionsButton)
 
@@ -881,8 +882,7 @@ function drawWorld()
 		mgFullScreenColor(0,0,0,moreAlpha*0.5)
 		mgDraw(moreUi)
 	end
-	-- Debug menu doesn't serve a purpose yet
-	-- mgDraw(dbgMenu)
+    mgDraw(dbgMenu)
 	
 	if ads_icon ~= -1 and mgGet("player.adsshown") == "0" then
 		if mgGet("player.adsonlyfree") == "0" or mgGet("game.premium")=="0" then
