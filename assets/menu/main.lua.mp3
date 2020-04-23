@@ -279,7 +279,8 @@ function load()
 
 	modeButton = mgCreateUi("modebutton.xml")
 	mgSetScale(modeButton, .75, .75)
-	mgSetPos(modeButton, left+50, bottom-155)
+	mgSetOrigo(modeButton, "bottomleft")
+	mgSetPos(modeButton, left+498, bottom-55)
 
 	top_gradient = mgCreateImage("gradient_edges.png")
 	mgSetScale(top_gradient, 2, 5)
@@ -421,10 +422,13 @@ function load()
 	mgSetScale(modWatermarkText, 0.5, 0.5)
 	mgSetPos(modWatermarkText, left+900, bottom-74)
 	
+	--  mgSetOrigo(scoreButton, "bottomleft")
+	--  mgSetPos(scoreButton, left+498, bottom-55)
+	
 	pauseUi = mgCreateUi("pause.xml")
-	mgSetOrigo(pauseUi, "center")
-	mgSetScale(pauseUi, 1, 1)
-	mgSetPos(pauseUi, right-100, top+100)
+	mgSetOrigo(pauseUi, "bottomleft")
+	mgSetScale(pauseUi, 0.3, 0.3)
+	mgSetPos(pauseUi, left+498, bottom-55)
 end
 
 
@@ -702,18 +706,21 @@ function drawWorld()
     mgSetText(modWatermarkText, modText)
     mgSetOrigo(modWatermarkText, "bottomright")
 	mgSetColor(modWatermarkText, .75, .9, .95)
-    mgDraw(modWatermarkText)
+    -- mgDraw(modWatermarkText)
     
---	mgDraw(modeButton)
---	if mode == 1 then mgSetCrop(modeButton, 0, 0, 580, 134)
---	elseif mode == 3 then mgSetCrop(modeButton, 0, 135, 580, 268)
---	elseif mode == 0 then mgSetCrop(modeButton, 0, 268, 580, 401)
---	elseif mode == 4 then mgSetCrop(modeButton, 0, 536, 580, 668)
---	elseif mode == 5 then mgSetCrop(modeButton, 0, 670, 580, 802)
---	else mgSetCrop(modeButton, 0, 402, 580, 535)
---	end
+    --[[
+	mgDraw(modeButton)
+	if mode == 1 then mgSetCrop(modeButton, 0, 0, 580, 134)
+	elseif mode == 3 then mgSetCrop(modeButton, 0, 135, 580, 268)
+	elseif mode == 0 then mgSetCrop(modeButton, 0, 268, 580, 401)
+	elseif mode == 4 then mgSetCrop(modeButton, 0, 536, 580, 668)
+	elseif mode == 5 then mgSetCrop(modeButton, 0, 670, 580, 802)
+	else mgSetCrop(modeButton, 0, 402, 580, 535)
+	end
+	]]--
 
     mgSetAlpha(pauseUi, t)
+    mgSetScale(pauseUi, 0.3, 0.3)
     mgDraw(pauseUi)
 
 --[[	if mode == MODE_CLASSIC or mode == MODE_TRAINING or mode == MODE_EXPERT or mode == MODE_COOP then
