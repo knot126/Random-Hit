@@ -420,6 +420,11 @@ function load()
 	modWatermarkText = mgCreateText("numbers", true)
 	mgSetScale(modWatermarkText, 0.5, 0.5)
 	mgSetPos(modWatermarkText, left+900, bottom-74)
+	
+	pauseUi = mgCreateUi("pause.xml")
+	mgSetOrigo(pauseUi, "center")
+	mgSetScale(pauseUi, 1, 1)
+	mgSetPos(pauseUi, right-100, top+100)
 end
 
 
@@ -707,6 +712,9 @@ function drawWorld()
 --	elseif mode == 5 then mgSetCrop(modeButton, 0, 670, 580, 802)
 --	else mgSetCrop(modeButton, 0, 402, 580, 535)
 --	end
+
+    mgSetAlpha(pauseUi, t)
+    mgDraw(pauseUi)
 
 --[[	if mode == MODE_CLASSIC or mode == MODE_TRAINING or mode == MODE_EXPERT or mode == MODE_COOP then
 		mgSetAlpha(scoreButton, t)
@@ -1419,6 +1427,15 @@ function handleCommand(cmd)
 		mgSetScale(ads_icon, 0.5, 0.5, "linear", 0.3)
 		mgSetAlpha(ads_icon, 0, "linear", 0.3)
 		mgCommand("player.adsshown")
+	end
+	
+    if cmd == "openrightmenu" then
+        local premium = (mgGet("game.premium") == "1")
+        if premium then
+            handleCommand("showmode")
+        else
+            handleCommand("showupgrade")
+        end
 	end
 end
 
