@@ -691,7 +691,7 @@ function drawWorld()
 	mgSetUiSelectionEnabled(modeButton, mode, true)
 	mgSetAlpha(modeButton, t)
     
-    local modText = 2020032801109000
+    local modText = 20200423011100
     
 	mgSetAlpha(modWatermarkText, t)
     mgSetText(modWatermarkText, modText)
