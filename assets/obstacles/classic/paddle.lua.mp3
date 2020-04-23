@@ -1,0 +1,27 @@
+function init()
+	s = mgGetFloat("size", 1)
+	g = mgCreateBody(0, .3, 0)
+	mgMaterial("glass")
+	mgCreateBox(g, s, 0.5, 0.02, 0, 0.5, 0)
+	
+	mgMaterial("steel")
+	mgCreateBox(g, 0.03, 1.5, 0.03, -s, 1.5, 0)
+	mgCreateBox(g, 0.03, 1.5, 0.03, s, 1.5, 0)
+
+	bosse,x = mgRaycast(0, 1, 0, 100, 1, 0, 128)
+	mgMask(127)
+	--mgDensity(100)
+	mgCreateBox(g, x, .05, 0.03, 0, 3, 0)
+	
+	mgCreateHingeJoint(0, g, 0, 3.3, 0, 1, 0, 0)
+end
+
+function tick()
+
+	mgRotate(g, mgCameraDistance()-1, 0, 0, 1, 10)
+	
+	if mgCameraDistance() < -0.5 then
+		mgClear()
+	end
+
+end

@@ -1,0 +1,29 @@
+function addTop(x, y, z)
+	a = mgCreateBody(x, y, z)
+	mgCreateMesh(a, "star")
+	mgSetAngVel(a, 0, math.random(30, 40), 0)
+end
+
+function init()
+	mgMaterial("glass")
+	mgFriction(0.5)
+
+	if math.random(0, 100) > 50 then
+		mgColor(0.5, 1.0, 1.0)
+		mgShapeScale(1.2, 1.2, 1.2)
+		addTop(-1, 1.0, -1);
+		addTop(1, 0.7, -1);
+		addTop(-1, 0.7, 1);
+		addTop(1, 0.7, 1);
+		addTop(0, 0.7, 0);
+	else
+		mgColor(1.0, 1.0, 0.5)
+		mgShapeScale(2,2,2)
+		addTop(0, 1, 0);
+	end
+end
+
+
+function tick()
+end
+

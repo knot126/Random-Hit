@@ -1,0 +1,32 @@
+function getRot()
+	if (mgGetBeat(0.25)+offset) % 4 < beat then
+		return 0
+	else
+		return -math.pi/2
+	end
+end
+
+function init()
+	offset = mgGetFloat("offset", 0)
+	beat = mgGetFloat("beat", 2)
+	w = mgGetFloat("w", 3)
+
+	mgMaterial("steel")	
+	mgMask(0)
+
+	b = mgCreateBody(0, 0.1, 0, 0, 0, 0)
+	mgCreateBox(b, w/2, 0.1, 0.05)
+
+	mgMaterial("glass")
+	mgColor(1, 1, 0.5)
+
+	mgCreateBox(b, w/2, 0.9, 0.04, 0, 1, 0)
+	mgCreateHingeJoint(b, 0, 0, 0, 0, 1, 0, 0)
+	mgRotate(b, angle, 0, 0, 100, 7)
+end
+
+function tick()
+	mgRotate(b, getRot(), 0, 0, 1.0, 8)
+	if mgBodyIsBroken(b) and not mgIsCleared() and mgCanPass() then mgClear(500) end
+end
+

@@ -1,0 +1,47 @@
+function init()
+	s = mgGetFloat("size", .5)
+
+	icicleArray = {}
+	doneArray = {}
+	
+	
+	for icicle=1,10 do
+	
+		mgShapeScale(1, 1, 1)
+
+		xPos = mgRndInt(-3,3)
+		yPos = mgRndFloat(0, 0.5)
+		zPos = mgRndInt(-20,0)
+	
+		b = mgCreateBody(xPos, -yPos, zPos)
+	
+		bosse,x,y = mgRaycast(0, 1, 0, 0, 50, 0, 128)
+		mgMaterial("steel")
+		mgStatic(1)
+		mgCreateBox(b, s, s, s, 0, y+s, 0)
+
+		mgMaterial("glass")
+		mgColor(0.5, 1, 0.5)
+		mgShapeScale(s*0.6, s*3, s*0.3)
+		
+		mgCreateMesh(b, "pyramid", 0, y, 0, 0, 0, math.pi)
+		icicleArray[icicle] = b
+		
+		doneArray[icicle] = false
+	end
+end
+
+function tick()
+
+	for icicle=1,10 do
+	
+		if mgBodyIsBroken(icicleArray[icicle]) and not doneArray[icicle] then
+			x,bosse,z = mgGetPos(icicleArray[icicle])
+			mgScore(100, x, y-1, 0)
+			doneArray[icicle] = true
+		end
+		
+	end
+end
+
+

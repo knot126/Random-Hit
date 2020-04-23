@@ -1,0 +1,72 @@
+-- CALM MODERNIZED
+
+function sectionClean()
+	z = z - 5
+end
+
+
+function init()
+	seed = mgGetInt("seed", math.random(0,100))
+	difficulty = mgGetFloat("difficulty", 1.0)
+	
+	mgRandomize(seed)
+	length = 50
+
+	--Setup
+	mgLength(length)
+	mgMusic("3")
+	
+	mgColor(0.6, 0.5, 0.5)
+
+	--mgBox(7, 0.5, length/2, 0, -5.5, -length/2)
+	mgBox(7, 0.5, length/2, 0, 7.5, -length/2)
+	mgBox(2, 0.5, length/2, -7.5, 6.5, -length/2)
+	mgBox(2, 0.5, length/2, 7.5, 6.5, -length/2)
+	mgBox(1, 15, length/2+0.5, -7.5, 0, -length/2)
+	mgBox(1, 15, length/2+0.5, 7.5, 0, -length/2)
+
+	for z=-5, -length+2, -3 do
+		for x=-3+mgRndInt(0,1), 3, 3 do
+			h = mgRndInt(1, 3)
+			mgBox(0.5, h/2, 0.5, x, 7-h/2, z)
+		end
+		for y=-4.5+mgRndInt(0,1), 5, 3 do
+			h = mgRndInt(1, 3)
+			mgBox(h/2, 0.5, 0.5, -6.5+h/2, y, z)
+			if h > 1 and mgRndBool(0.4) then
+				mgObstacle("classic/scoretop", -6.5+h-0.5, y+0.5, z)
+			elseif h == 1 and mgRndBool(0.1) then
+				mgPowerUp("multiball", -6.5+h-0.5, y+0.5, z)
+			elseif h == 2 then
+				mgPowerUp("balls", -6.5+h-0.5, y+0.5, z)
+			end
+		end
+		for y=-4.5+mgRndInt(0,1), 5, 3 do
+			h = mgRndInt(1, 3)
+			mgBox(h/2, 0.5, 0.5, 6.5-h/2, y, z)
+			if h > 1 and mgRndBool(0.4) then
+				mgObstacle("classic/scoretop", 6.5-h+0.5, y+0.5, z)
+			elseif h == 1 and mgRndBool(0.05) then
+				mgPowerUp("life", 6.5-h+0.5, y+0.5, z)
+			end
+		end
+	end
+
+	
+	z = 0
+	buildBridge(z, 1, 15, length)
+	z = z - 10
+
+	addSection(sectionClean, 1)
+
+	while z > -length+10 do
+		func = nextSection()
+		func()
+	end
+				
+	--Door at end
+	buildEndWallNoFloor(13, 15, length, 2, 2, 0.5)
+	mgObstacle("classic/door1", 0, 0, -length, "buttons=" .. mgRndInt(0, 2))	
+end
+
+

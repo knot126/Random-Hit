@@ -1,0 +1,26 @@
+
+function init()
+	w = mgGetFloat("width", 1)
+	h = mgGetFloat("height", 1)
+	d = mgGetFloat("depth", 1)
+	r,g,b = mgGetColor("color", 0.5, 1, 0.5)
+
+	body = mgCreateBody(0, h/2+0.05, 0)
+
+	mgMaterial("steel")
+	mgStatic(1)
+	mgCreateBox(body, w/2+0.2, 0.05, d/2+0.2, 0, -h/2-0.05, 0)
+
+	mgMaterial("glass")
+	mgColor(r, g, b)
+	mgCreateBox(body, w/2, 0.02, d/2, 0, h/2, 0)
+	mgCreateBox(body, 0.02, h/2, d/2, -w/2, 0, 0)
+	mgCreateBox(body, 0.02, h/2, d/2, w/2, 0, 0)
+	mgCreateBox(body, w/2, h/2, 0.02, 0, 0, d/2)
+	mgCreateBox(body, w/2, h/2, 0.02, 0, 0, -d/2)
+end
+
+
+function tick()
+end
+

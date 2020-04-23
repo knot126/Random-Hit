@@ -1,0 +1,21 @@
+
+function init()
+	offset = mgGetFloat("offset", 0)
+
+	mgMaterial("steel")
+	mgStatic(2)
+	mgMask(127)
+	mgCategory(128)
+	mgColor(0.7, 0.7, 0.7)
+	
+	b = mgCreateBody(0, math.sin(offset + mgTime()), 0)
+	mgCreateBox(b, 0.5, 0.1, 0.5)
+	mgPowerUp("diamond", 0, math.sin(offset + mgTime())+1, 0)
+
+end
+
+
+function tick()
+	mgMove(b, 0, math.sin(offset + mgTime()), 0, 10, 3)
+end
+

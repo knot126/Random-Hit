@@ -1,0 +1,37 @@
+function init()
+	followBeat = mgGetBool("followbeat", false)
+
+	a = mgCreateBody()
+	mgMaterial("steel")
+	mgStatic(1)
+	mgMask(0)
+	mgCreateBox(a, 0.1, 1.1, 0.05, 0, 4, -0.25)
+	mgCreateBox(a, 0.1, 1.1, 0.05, 0, 4, 0.25)
+
+	mgMaterial("steel")
+	b = mgCreateBody(0, 3, 0)
+
+	mgMaterial("steel")
+	mgCreateBox(b, 0.2, 0.2, 0.15)
+
+	mgMaterial("glass")
+	mgColor(0.5, 1.0, 0.5)
+	mgCreateBox(b, 0.1, 1, 0.1, 0, -1, 0)
+
+	mgMaterial("steel")
+	mgCreateBox(b, 0.8, 0.4, 0.4, 0, -2.4, 0)
+
+	mgSetAngVel(b, 0, 0, 10)
+	mgCreateHingeJoint(b, 0, 0, 3, 0, 0, 0, 1)
+
+	offset = math.random(0, 10)
+end
+
+function tick()
+	if followBeat then
+		mgRotate(b, 0, 0, 1.5*math.sin(mgTime()/17.4*16*math.pi), 10.0, 10)
+	else
+	mgRotate(b, 0, 0, math.sin(offset + 2.0*mgTime()))
+	end
+end
+
