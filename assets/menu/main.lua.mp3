@@ -27,7 +27,7 @@ function getSecond(str)
 	return ""
 end
 
-levelCount = 1
+levelCount = 20
 
 function setCanvasMode()
 	mgSetCanvasMovable(levelCanvas, "x")
