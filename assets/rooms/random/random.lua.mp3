@@ -477,6 +477,9 @@ function init()
 
 	-- End Room Configuration
 
+	pStart = mgGetBool("start", true)
+	pEnd = mgGetBool("end", true)
+
 	local music = math.random(0, 45)
 	if has_old_music == 1 then
 		music = math.random(0, 46)
@@ -546,19 +549,36 @@ function init()
 
 	l = 0
 
+	if pStart then
+		local s = math.random(1, 5)
+			-- Holodeck
+		if s == 1 then
+			l = l + mgSegment("holodeck/bonus_start", -l)
+			elseif s == 2 then l = l + mgSegment("holodeck/start0", -l)
+			elseif s == 3 then l = l + mgSegment("holodeck/rapid_start", -l)
+			elseif s == 4 then l = l + mgSegment("holodeck/boss/start", -l)
+			elseif s == 5 then l = l + mgSegment("holodeck/calm_start", -l)
+		end
+	end
+
 	-- Next line gets a random number between 120 and 350, sets as our target
 	-- length.
 	local targetLen = math.random(120, 350)
 
 	if increaseing_speed == 1 then
+		-- Get game speed
 		k = mgGetInt("game.speed")
+		-- Check that game speed is no less than 150
 		if k < 150 then
 			k = 150
 		end
+		-- add 5 to game speed
 		k = k + 5
+		-- Check that game speed is no greater than 300
 		if k > 300 then
 			k = 300
 		end
+		-- Set new speed to length and game.speed
 		targetLen = k
 		mgSetInt("game.speed", k)
 	end
@@ -571,68 +591,70 @@ function init()
 
 	-- Random Doors
 
-	local d = math.random(1, 60)
-	if d == 1 then 
-		l = l + mgSegment("brownie/part2/door", -l)
-		elseif d == 2 then l = l + mgSegment("split/split_rot/door", -l)
-		elseif d == 3 then l = l + mgSegment("split/split0/door", -l)
-		elseif d == 4 then l = l + mgSegment("split/solo/door", -l)
-		elseif d == 5 then l = l + mgSegment("split/split_rot/door", -l)
-		elseif d == 6 then l = l + mgSegment("split/split1/door", -l)
-		elseif d == 7 then l = l + mgSegment("split/split2/door", -l)
-		elseif d == 8 then l = l + mgSegment("split/split_start/door", -l)
-		elseif d == 9 then l = l + mgSegment("brownie/part1/door", -l)
-		elseif d == 10 then l = l + mgSegment("brownie/part3/door", -l)
-		elseif d == 11 then l = l + mgSegment("endless/space/door", -l)
-		elseif d == 12 then l = l + mgSegment("endless/wide/door", -l)
-		elseif d == 13 then l = l + mgSegment("endless/open/door", -l)
-		elseif d == 14 then l = l + mgSegment("endless/narrow/door", -l)
-		elseif d == 15 then l = l + mgSegment("cave/narrow/door", -l)
-		elseif d == 16 then l = l + mgSegment("cave/spin/door", -l)
-		elseif d == 17 then l = l + mgSegment("cave/hall/door", -l)
-		elseif d == 18 then l = l + mgSegment("cave/corridor/door", -l)
-		elseif d == 19 then l = l + mgSegment("cave2/narrow/door", -l)
-		elseif d == 20 then l = l + mgSegment("cave2/bottom/door", -l)
-		elseif d == 21 then l = l + mgSegment("cave2/top/door2", -l)
-		elseif d == 22 then l = l + mgSegment("cave2/top/door", -l)
-		elseif d == 23 then l = l + mgSegment("city/narrow/door", -l)
-		elseif d == 24 then l = l + mgSegment("city/path2/door", -l)
-		elseif d == 25 then l = l + mgSegment("city/fall/door", -l)
-		elseif d == 26 then l = l + mgSegment("city/path/door", -l)
-		elseif d == 27 then l = l + mgSegment("city/trench/door", -l)
-		elseif d == 28 then l = l + mgSegment("canyon/cave/door", -l)
-		elseif d == 29 then l = l + mgSegment("canyon/trail/door", -l)
-		elseif d == 30 then l = l + mgSegment("canyon/columns/door", -l)
-		elseif d == 31 then l = l + mgSegment("phosphor/part4/door", -l)
-		elseif d == 32 then l = l + mgSegment("phosphor/part2/door", -l)
-		elseif d == 33 then l = l + mgSegment("phosphor/part1/door", -l)
-		elseif d == 34 then l = l + mgSegment("phosphor/part3/door", -l)
-		elseif d == 35 then l = l + mgSegment("holodeck/rapid_door", -l)
-		elseif d == 36 then l = l + mgSegment("holodeck/calm_door", -l)
-		elseif d == 37 then l = l + mgSegment("holodeck/bonus_door", -l)
-		elseif d == 38 then l = l + mgSegment("holodeck/beat_door", -l)
-		elseif d == 39 then l = l + mgSegment("holodeck/bonus_door", -l)
-		elseif d == 40 then l = l + mgSegment("zen/space/door", -l)
-		elseif d == 41 then l = l + mgSegment("zen/open/door", -l)
-		elseif d == 42 then l = l + mgSegment("zen/open/door", -l)
-		elseif d == 43 then l = l + mgSegment("zen/narrow/door", -l)
-		elseif d == 44 then l = l + mgSegment("ocean/towers/door", -l)
-		elseif d == 45 then l = l + mgSegment("ocean/stairs/door", -l)
-		elseif d == 46 then l = l + mgSegment("ocean/sky/door", -l)
-		elseif d == 47 then l = l + mgSegment("ocean/tunnel/door", -l)
-		elseif d == 48 then l = l + mgSegment("night/part2/door", -l)
-		elseif d == 49 then l = l + mgSegment("night/part1/door", -l)
-		elseif d == 50 then l = l + mgSegment("night/part3/door", -l)
-		elseif d == 51 then l = l + mgSegment("hyperspace/fall/door", -l)
-		elseif d == 52 then l = l + mgSegment("hyperspace/orbit/door", -l)
-		elseif d == 53 then l = l + mgSegment("hyperspace/warp/door", -l)
-		elseif d == 54 then l = l + mgSegment("hyperspace/cruise/door", -l)
-		elseif d == 55 then l = l + mgSegment("basic/darker/door", -l)
-		elseif d == 56 then l = l + mgSegment("basic/basic/door", -l)
-		elseif d == 57 then l = l + mgSegment("basic/dark/door", -l)
-		elseif d == 58 then l = l + mgSegment("river/path2/door", -l)
-		elseif d == 59 then l = l + mgSegment("river/path/door", -l)
-		elseif d == 60 then l = l + mgSegment("river/tunnel/door", -l)
+	if pEnd then
+		local d = math.random(1, 60)
+		if d == 1 then 
+			l = l + mgSegment("brownie/part2/door", -l)
+			elseif d == 2 then l = l + mgSegment("split/split_rot/door", -l)
+			elseif d == 3 then l = l + mgSegment("split/split0/door", -l)
+			elseif d == 4 then l = l + mgSegment("split/solo/door", -l)
+			elseif d == 5 then l = l + mgSegment("split/split_rot/door", -l)
+			elseif d == 6 then l = l + mgSegment("split/split1/door", -l)
+			elseif d == 7 then l = l + mgSegment("split/split2/door", -l)
+			elseif d == 8 then l = l + mgSegment("split/split_start/door", -l)
+			elseif d == 9 then l = l + mgSegment("brownie/part1/door", -l)
+			elseif d == 10 then l = l + mgSegment("brownie/part3/door", -l)
+			elseif d == 11 then l = l + mgSegment("endless/space/door", -l)
+			elseif d == 12 then l = l + mgSegment("endless/wide/door", -l)
+			elseif d == 13 then l = l + mgSegment("endless/open/door", -l)
+			elseif d == 14 then l = l + mgSegment("endless/narrow/door", -l)
+			elseif d == 15 then l = l + mgSegment("cave/narrow/door", -l)
+			elseif d == 16 then l = l + mgSegment("cave/spin/door", -l)
+			elseif d == 17 then l = l + mgSegment("cave/hall/door", -l)
+			elseif d == 18 then l = l + mgSegment("cave/corridor/door", -l)
+			elseif d == 19 then l = l + mgSegment("cave2/narrow/door", -l)
+			elseif d == 20 then l = l + mgSegment("cave2/bottom/door", -l)
+			elseif d == 21 then l = l + mgSegment("cave2/top/door2", -l)
+			elseif d == 22 then l = l + mgSegment("cave2/top/door", -l)
+			elseif d == 23 then l = l + mgSegment("city/narrow/door", -l)
+			elseif d == 24 then l = l + mgSegment("city/path2/door", -l)
+			elseif d == 25 then l = l + mgSegment("city/fall/door", -l)
+			elseif d == 26 then l = l + mgSegment("city/path/door", -l)
+			elseif d == 27 then l = l + mgSegment("city/trench/door", -l)
+			elseif d == 28 then l = l + mgSegment("canyon/cave/door", -l)
+			elseif d == 29 then l = l + mgSegment("canyon/trail/door", -l)
+			elseif d == 30 then l = l + mgSegment("canyon/columns/door", -l)
+			elseif d == 31 then l = l + mgSegment("phosphor/part4/door", -l)
+			elseif d == 32 then l = l + mgSegment("phosphor/part2/door", -l)
+			elseif d == 33 then l = l + mgSegment("phosphor/part1/door", -l)
+			elseif d == 34 then l = l + mgSegment("phosphor/part3/door", -l)
+			elseif d == 35 then l = l + mgSegment("holodeck/rapid_door", -l)
+			elseif d == 36 then l = l + mgSegment("holodeck/calm_door", -l)
+			elseif d == 37 then l = l + mgSegment("holodeck/bonus_door", -l)
+			elseif d == 38 then l = l + mgSegment("holodeck/beat_door", -l)
+			elseif d == 39 then l = l + mgSegment("holodeck/bonus_door", -l)
+			elseif d == 40 then l = l + mgSegment("zen/space/door", -l)
+			elseif d == 41 then l = l + mgSegment("zen/open/door", -l)
+			elseif d == 42 then l = l + mgSegment("zen/open/door", -l)
+			elseif d == 43 then l = l + mgSegment("zen/narrow/door", -l)
+			elseif d == 44 then l = l + mgSegment("ocean/towers/door", -l)
+			elseif d == 45 then l = l + mgSegment("ocean/stairs/door", -l)
+			elseif d == 46 then l = l + mgSegment("ocean/sky/door", -l)
+			elseif d == 47 then l = l + mgSegment("ocean/tunnel/door", -l)
+			elseif d == 48 then l = l + mgSegment("night/part2/door", -l)
+			elseif d == 49 then l = l + mgSegment("night/part1/door", -l)
+			elseif d == 50 then l = l + mgSegment("night/part3/door", -l)
+			elseif d == 51 then l = l + mgSegment("hyperspace/fall/door", -l)
+			elseif d == 52 then l = l + mgSegment("hyperspace/orbit/door", -l)
+			elseif d == 53 then l = l + mgSegment("hyperspace/warp/door", -l)
+			elseif d == 54 then l = l + mgSegment("hyperspace/cruise/door", -l)
+			elseif d == 55 then l = l + mgSegment("basic/darker/door", -l)
+			elseif d == 56 then l = l + mgSegment("basic/basic/door", -l)
+			elseif d == 57 then l = l + mgSegment("basic/dark/door", -l)
+			elseif d == 58 then l = l + mgSegment("river/path2/door", -l)
+			elseif d == 59 then l = l + mgSegment("river/path/door", -l)
+			elseif d == 60 then l = l + mgSegment("river/tunnel/door", -l)
+		end
 	end
 
 	mgLength(l)
