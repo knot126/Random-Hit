@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.11.0 (Working release)
+## 1.11.0dev1
 
  * Option to show modes menu when package name is `com.mediocre.smashhit`
  * All rooms now have a starting segment
