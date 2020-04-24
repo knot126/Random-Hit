@@ -2,6 +2,8 @@
 
 ## 1.11.0dev1
 
+Changes since 1.10.0:
+
  * Option to show modes menu when package name is `com.mediocre.smashhit`
  * All rooms now have a starting segment
  * Changed the number of checkpoints registered from 1 to 20
