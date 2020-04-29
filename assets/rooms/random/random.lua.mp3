@@ -532,9 +532,9 @@ function init()
 	mgMusic(tostring(music)) -- Probably better to convert music to a string first
 	mgFogColor(color_a_red, color_a_green, color_a_blue, color_b_red, color_b_green, color_b_blue)
     if gravity_control > -1000 then
-	    mgGravity(gravity)
+	    mgGravity(gravity_control)
     else
-        mgGravity(gravity_control)
+        mgGravity(gravity)
     end
 
 	local r = math.random(5)
