@@ -479,6 +479,8 @@ function init()
     -- FIXME: It doesn't work:
 	local increseing_speed = 1 -- For (Proof-Of-Concept) Dynamic TargetLen change
 	local gravity_control = -1000 -- To set gravity for all rooms
+                                  -- A value greater than -1000 will set the
+                                  -- gravity to that value.
     local rotate_chance = {25, 12} -- First number is main number to target through to 1
                                    -- Second number is the target number
 
