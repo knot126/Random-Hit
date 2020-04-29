@@ -457,8 +457,9 @@ end
 
 function init()
 
-	-- Smash Hit random rooms - Room version 13 by cdde
+	-- Smash Hit random rooms - Room version 14.0 by cdde
 	-- Special thanks to Megadron Z_Z for some help.
+    -- https://gitlab.com/cdde/smash-hit-random-rooms-1.x
 
 	-- Note: My mod and Megadron Z_Z's mod are NOT THE
 	-- SAME! This one was inspired by his, with a slightly
@@ -475,7 +476,11 @@ function init()
 	local has_old_music = 1 -- for music in old folder
 	local has_old_segments = 0 -- for old segments
 	coop_segments = 0 -- For most Co-Op/Versus segments
+    -- FIXME: It doesn't work:
 	local increseing_speed = 1 -- For (Proof-Of-Concept) Dynamic TargetLen change
+	local gravity_control = -1000 -- To set gravity for all rooms
+    local rotate_chance = {25, 12} -- First number is main number to target through to 1
+                                   -- Second number is the target number
 
 	-- End Room Configuration
 
@@ -526,7 +531,11 @@ function init()
 	-- Setup enviorment
 	mgMusic(tostring(music)) -- Probably better to convert music to a string first
 	mgFogColor(color_a_red, color_a_green, color_a_blue, color_b_red, color_b_green, color_b_blue)
-	mgGravity(gravity)
+    if gravity_control > -1000 then
+	    mgGravity(gravity)
+    else
+        mgGravity(gravity_control)
+    end
 
 	local r = math.random(5)
 
@@ -541,12 +550,12 @@ function init()
 	end
 
 	-- TODO: Rotation is tied to music
-	local t = math.random(30)
-	if t == 15 then
+	local t = math.random(rotate_chance[1])
+	if t == rotate_chance[2] then
 		mgSetRotation(-1)
 	end
 
-	-- To help reduce clutter, I've moved the confSgement-s statements into its own function...
+	-- To help reduce clutter, I've moved the confSgement(s) statements into its own function...
 	loadSegments()
 
 	l = 0
