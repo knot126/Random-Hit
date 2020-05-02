@@ -6,6 +6,8 @@ MODE_VERSUS = 4
 MODE_COOP = 5
 MODE_COUNT = 6
 
+loadWithModes = 1
+
 function startsWith(str,start)
    return string.sub(str,1,string.len(start))==start
 end
@@ -156,8 +158,6 @@ function loadRanks()
 		rankScore[17] = 14000
 	end
 end
-
-loadWithModes = 1
 
 function load()
 	optionsButton = mgCreateUi("optionsbutton.xml")
