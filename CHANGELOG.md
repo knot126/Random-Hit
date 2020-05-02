@@ -1,6 +1,15 @@
 # Changelog
 
-## 1.11.0dev1
+## 1.12.0
+
+Changes since 1.11.0dev1, now called 1.11.0:
+
+ * Added bosses for premium users
+ * Added Checkpoint 11 Room 1 (City/Trench) segments
+ * Room: Now more conifgurable
+ * Easier way to build the mod from source
+
+## 1.11.0dev1 (aka 1.11.0)
 
 Changes since 1.10.0:
 
