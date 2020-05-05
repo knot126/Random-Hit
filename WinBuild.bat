@@ -5,8 +5,14 @@ del /F /S /Q %1\res
 del /F /S /Q %1\AndroidManifest.xml
 
 echo Copy files to %1...
+md assets
+cd assets
 xcopy /J /Y /E .\assets %1
+cd ..
+md res
+cd res
 xcopy /J /Y /E .\res %1
+cd ..
 xcopy /J /Y /E .\AndroidManifest.xml %1
 
 echo 
