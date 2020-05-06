@@ -518,6 +518,11 @@ function init()
     local rotate_chance = {25, 12}
     -- First number is main number to target through to 1
     -- Second number is the target number
+    
+    local enable_added_music = 0
+    local added_music_list = {}
+    -- Weather to enable old music, followed by a list of old music in a Lua 
+    -- array, list, or whatever they're calling it today...
 
     -- END ROOM CONFIG
 
@@ -526,7 +531,7 @@ function init()
     pDifficulty = mgGetFloat("difficulty", 1.0)
 
     local music = math.random(0, 45)
-    if has_old_music == 1 then
+    if enable_added_music == 1 then
         music = math.random(0, 46)
     end
     
@@ -564,8 +569,7 @@ function init()
     elseif music == 45 then
         music = "bowling"
     elseif music == 46 then
-        -- POSSIBLE BUG: This music isn't loaded correctly -> stop glitch
-        music = "old/4_36s_test"
+        music = added_music_list[math.random(#added_music_list)]
     end
 
     -- Setup enviorment
