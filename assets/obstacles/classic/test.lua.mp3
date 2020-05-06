@@ -1,7 +1,0 @@
-function init()
-	mgMaterial("glass")
-	b = mgCreateBody(0, 0.5, 0)
-	mgCreateBox(b, 0.5, 0.5, 0.1)
-end
-
-

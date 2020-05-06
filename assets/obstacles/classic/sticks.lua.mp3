@@ -1,9 +1,0 @@
-function init()
-	for x=-3, 3 do
-		a = mgCreateBody(x, 1, 0)
-
-		mgDensity(4.0)
-		mgColor(1.0, 0.9, 0.8)
-		mgCreateBox(a, 0.2, 1, 0.2)
-	end
-end
