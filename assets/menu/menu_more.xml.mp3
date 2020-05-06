@@ -4,6 +4,6 @@
 	<rect coords="235 365 668 489" 	cmd="script:facebook"/>
 	<rect coords="235 490 576 614" 	cmd="script:twitter"/>
 	<rect coords="235 615 713 739" 	cmd="script:website"/>
-	<rect coords="235 740 732 864" 	cmd="level.start level:moregames ; script:hidemore"/>
+	<rect coords="235 740 732 864" 	cmd="level.start level:random2 ; script:hidemore"/>
 	<outside cmd="script:hidemore"/>
 </ui>
