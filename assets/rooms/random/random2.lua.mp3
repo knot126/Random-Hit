@@ -538,7 +538,7 @@ function init()
     local color_b_green = mgRndFloat(0.5, 1.5)
     local color_b_blue = mgRndFloat(0.5, 1.5)
     
-    local gravity = mgRndFloat(-0.05, 1)
+    local gravity = mgRndFloat(-0.15, 1.15)
     local conflict = math.random(0, 1)
     
     -- The following fixes the stop glitch, since 38 and 42 aren't real
