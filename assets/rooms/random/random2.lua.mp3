@@ -279,6 +279,27 @@ function loadSegments()
     confSegment("endless/space/scores/16_1", 0.7)
     confSegment("endless/space/scores/16_2", 0.7)
     confSegment("endless/space/scores/16_3", 0.7)
+    
+    -- Endless (unused filler used in this mod)
+    
+    confSegment("endless/narrow/fillers/8_0", .1)
+    confSegment("endless/narrow/fillers/8_2", .25)
+    confSegment("endless/narrow/fillers/8_3", .25)
+    confSegment("endless/narrow/fillers/16_0", .25)
+    confSegment("endless/narrow/fillers/16_1", .1)
+    confSegment("endless/open/fillers/8_0", .5)
+    confSegment("endless/open/fillers/8_1", .5)
+    confSegment("endless/open/fillers/8_2", .1)
+    confSegment("endless/open/fillers/8_3", .1)
+    confSegment("endless/open/fillers/16_0", .5)
+    confSegment("endless/open/fillers/16_1", .1)
+    confSegment("endless/wide/fillers/8_1", .5)
+    confSegment("endless/wide/fillers/8_2", .5)
+    confSegment("endless/wide/fillers/8_3", 1)
+    confSegment("endless/space/fillers/16_0", .5)
+    confSegment("endless/space/fillers/16_1", .5)
+    confSegment("endless/space/fillers/16_2", .5)
+    confSegment("endless/space/fillers/16_3", .5)
 
     -- Zen mode
 
