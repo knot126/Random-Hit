@@ -546,7 +546,7 @@ function init()
     local conflict = math.random(0, 1)
     
     -- The following fixes the stop glitch, since 38 and 42 aren't real
-    -- musics, instead we use 29_1/2, 38_1/2 and 42_1/2.
+    -- musics, instead we use 29/_2, 38_1/2 and 42_1/2.
 
     if music == 29 then
         if conflict == 1 then
