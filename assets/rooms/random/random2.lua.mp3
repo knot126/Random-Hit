@@ -487,18 +487,17 @@ end
 
 function init()
 
-    -- Smash Hit random rooms - Room version 14.0 by cdde
-    -- Special thanks to Megadron Z_Z for some help.
+    -- Random Hit - Random Room version 2.0beta1
+    
+    -- Here is the GitLab page for this mod's source:
     -- https://gitlab.com/cdde/smash-hit-random-rooms-1.x
 
-    -- Note: My mod and Megadron Z_Z's mod are NOT THE
-    -- SAME! This one was inspired by his, with a slightly
-    -- diffrent vision.
-
     -- This room file should play nicely (if configured
-    -- correctly) when repackaged into default Smash Hit.
+    -- correctly) when repackaged into other mods.
     -- Please do not hesitate to copy this into your own
-    -- Smash Hit mod as a game mod or something!
+    -- Smash Hit mod as a game mode or similar!
+    
+    -- Special thanks to Megadron Z_Z for some help.
 
     -- START ROOM CONFIG
     -- This can be used to enable/disable some things...
