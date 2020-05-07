@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.13.0
+
+Changes since 1.12.0:
+
+ * Removed some files that were used for testing the mod
+ * Changed the glass to color to be the same as the boss
+ * Added exprimental new version of room in *More -> More games*
+   * This is the version that will be used in 2.0.
+
+### Trivia  
+
+ * Last version in the 1.x series (before bugfix classic releases), and the last to use the pre-2.0-refactor room
+
 ## 1.12.0
 
 Changes since 1.11.0dev1, now called 1.11.0:
