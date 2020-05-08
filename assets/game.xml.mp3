@@ -1,20 +1,20 @@
 <game>
 	<levels>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
-		<level name="random"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
+		<level name="random2"/>
 	</levels>
 </game>
 
