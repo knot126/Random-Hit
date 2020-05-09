@@ -530,12 +530,12 @@ function init()
 
     local music = music_list[math.random(#music_list)]
     
-    local color_a_red = mgRndFloat(0.5, 1.5)
-    local color_a_green = mgRndFloat(0.5, 1.5)
-    local color_a_blue = mgRndFloat(0.5, 1.5)
-    local color_b_red = mgRndFloat(0.5, 1.5)
-    local color_b_green = mgRndFloat(0.5, 1.5)
-    local color_b_blue = mgRndFloat(0.5, 1.5)
+    local r0 = mgRndFloat(0.5, 1.5)
+    local g0 = mgRndFloat(0.5, 1.5)
+    local b0 = mgRndFloat(0.5, 1.5)
+    local r1 = mgRndFloat(0.5, 1.5)
+    local g1 = mgRndFloat(0.5, 1.5)
+    local b1 = mgRndFloat(0.5, 1.5)
     
     local gravity = mgRndFloat(-0.15, 1.15)
     local conflict = math.random(0, 1)
@@ -545,7 +545,7 @@ function init()
 
     -- Setup enviorment
     mgMusic(tostring(music)) -- Probably better to convert music to a string first
-    mgFogColor(color_a_red, color_a_green, color_a_blue, color_b_red, color_b_green, color_b_blue)
+    mgFogColor(r0, g0, b0, r1, g1, b1)
     if gravity_control > -1000 then
         mgGravity(gravity_control)
     else
