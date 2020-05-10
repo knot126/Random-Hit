@@ -2,7 +2,7 @@ function init()
 	static = mgGetBool("static", true)
 	ray = mgGetBool("raycast", false)
 
-	score = mgRandInt(2, 4)
+	score = mgRndInt(2, 4)
 	mgScore(score, 0, 0.6, 0.1)
 	mgGlow(0, 0.4, -.2)
 	

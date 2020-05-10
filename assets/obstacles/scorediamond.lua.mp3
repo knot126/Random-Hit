@@ -10,7 +10,7 @@ end
 function init()
 	ray = mgGetBool("raycast", false)
 
-	score = mgRandInt(4, 6)
+	score = mgRndInt(4, 6)
 	mgScore(score, 0, 0.6, 0.1)
 	mgGlow(0, getY(), 0)
 	
