@@ -1,4 +1,4 @@
-function loadSegments()
+function loadSegments(old_segments, enable_coop)
     confSegment("basic/basic/chasms", 1)
     confSegment("basic/basic/chasms2", 1)
     confSegment("basic/basic/stairs", 1)
@@ -378,9 +378,25 @@ function loadSegments()
     confSegment("zen/narrow/scores/8_scoretop2", 0.5)
     confSegment("zen/narrow/scores/8_scoretop3", 0.5)
     confSegment("zen/narrow/scores/8_scoretop4", 0.5)
+    
+    if old_segments then
+        confSegment("riverx/bar", 1)
+        confSegment("riverx/bar_bounce", 1)
+        confSegment("riverx/bounce", 1)
+        confSegment("riverx/fly", 1)
+        
+        confSegment("riverx/green_hammers", 1)
+        confSegment("riverx/green_turrets", 1)
+        confSegment("riverx/green_cranks", 1)
+        
+        confSegment("riverx/blue_crank", 1)
+        confSegment("riverx/blue_crank2", 1)
+        confSegment("riverx/blue_hammer", 1)
+        confSegment("riverx/blue_hammer2", .5)
+    end
 
     -- Co-op/Versus Segments
-    if coop_segments == 1 then
+    if enable_coop then
         -- Co-op segments are not fair, so allow it to be configureable.
         confSegment("split/split_bonus/8", 0.2)
         confSegment("split/split_bonus/8_2", 0.2)
@@ -502,9 +518,6 @@ function init()
     -- START ROOM CONFIG
     -- This can be used to enable/disable some things...
     
-    coop_segments = 0 
-    -- For most Co-Op/Versus segments
-    
     local increseing_speed = 1 
     -- For (Proof-Of-Concept) Dynamic TargetLen change
     -- FIXME: It doesn't work.
@@ -579,7 +592,7 @@ function init()
     end
 
     -- To help reduce clutter, I've moved the confSgement(s) statements into its own function...
-    loadSegments()
+    loadSegments(true, false)
 
     l = 0
     

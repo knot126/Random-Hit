@@ -1,0 +1,23 @@
+<segment size="12 10 16" template="river_green_s">
+	<box size="0.5 2.0 0.6875" pos="-3.0 -3.0 -7.3125" hidden="0" template="river_green"/>
+	<box size="0.5 3.0 4.0" pos="0.0 -3.0 -4.0" hidden="0" template="river_green"/>
+	<box size="0.5 2.0 0.125" pos="-2.0 -3.0 -7.875" hidden="0" template="river_green"/>
+	<obstacle pos="0.0 0.043507 -8.5" hidden="0" template="river_st" type="scoretop"/>
+	<obstacle pos="-3.0 0.043507 -8.5" hidden="0" template="river_st" type="scoretop"/>
+	<obstacle pos="3.0 0.043507 -8.5" hidden="0" template="river_st" type="scoretop"/>
+	<box size="19.0 0.5 4.5" pos="0.0 -2.5 -4.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="3.5 2.5 0.5" pos="0.0 -2.5 -8.5" hidden="1" template="river_green"/>
+	<decal pos="-0.0625 0.15204 -9.5625" hidden="0" tile="11" size="1.5 1.5" color=".6 .9 1 .8"/>
+	<box size="0.5 2.5 2.0" pos="-3.0 -2.5 -11.0" hidden="0" template="river_green"/>
+	<box size="0.5 2.5 2.0" pos="3.0 -2.5 -11.0" hidden="0" template="river_green"/>
+	<obstacle pos="0.0 0.043507 -13.5" hidden="0" template="river_st" type="scoretop"/>
+	<obstacle pos="3.0 0.043507 -13.5" hidden="0" template="river_st" type="scoretop"/>
+	<obstacle pos="-3.0 0.043507 -13.5" hidden="0" template="river_st" type="scoretop"/>
+	<box size="8.5 0.5 2.5" pos="-11.5 -2.5 -11.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="3.5 2.5 0.5" pos="0.0 -2.5 -13.5" hidden="0" template="river_green"/>
+	<box size="8.5 0.5 2.5" pos="11.5 -2.5 -11.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 3.0 1.0" pos="0.0 -3.0 -15.0" hidden="0" template="river_green"/>
+	<box size="19.0 0.5 8.0" pos="0.0 8.0 -8.0" hidden="1" template="river_wall" reflection="1"/>
+	<box size="19.0 0.5 1.0" pos="0.0 -2.5 -15.0" hidden="0" template="river_wall" reflection="1"/>
+</segment>
+

@@ -1,0 +1,56 @@
+<segment size="12 10 16" template="river_green_s">
+	<box size="0.5 0.0625 0.5" pos="0.0 0.0625 -1.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.25 0.5" pos="1.0 -3.75 -8.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.0625 0.5" pos="4.0 -3.9375 -8.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.125 0.5" pos="3.0 -3.875 -8.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.0625 0.5" pos="2.0 -3.9375 -8.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.25 0.5" pos="10.0 -3.75 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="11.0 -3.8125 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="12.0 -3.875 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="13.0 -3.8125 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="14.0 -3.9375 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="5.0 -3.9375 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="6.0 -3.875 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="7.0 -3.9375 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="8.0 -3.8125 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="9.0 -3.875 -8.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 3.0 4.5" pos="0.0 -3.0 -4.5" hidden="0" template="river_green"/>
+	<box size="0.5 0.0625 0.5" pos="0.0 0.0625 -8.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.5 0.5" pos="-1.0 -3.5 -11.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.0625 0.5" pos="-3.0 -3.9375 -11.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="-2.0 -3.875 -11.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.0 2.9375 0.0" pos="-5.0 -3.9375 -12.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.375 0.5" pos="-2.0 -3.625 -12.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.0625 0.5" pos="-5.0 -3.9375 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="-8.0 -3.875 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="-9.0 -3.9375 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="-10.0 -3.8125 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="-11.0 -3.875 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="-12.0 -3.8125 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="-13.0 -3.875 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.5 0.5" pos="-3.0 -3.5 -12.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.125 0.5" pos="-6.0 -3.875 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 3.0 0.5" pos="-1.0 -3.0 -12.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.125 0.5" pos="-4.0 -3.875 -12.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.1875 0.5" pos="-7.0 -3.8125 -12.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="1.0 -3.875 -13.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="2.0 -3.9375 -13.5" hidden="0" template="river_wall" reflection="1"/>
+	<powerup pos="2.0 -0.875 -14.5" hidden="0" type="nitroballs"/>
+	<box size="0.5 2.125 0.5" pos="3.0 -3.875 -14.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.0625 0.5" pos="12.0 -3.9375 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="4.0 -3.9375 -14.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.125 0.5" pos="8.0 -3.875 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="7.0 -3.8125 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="6.0 -3.875 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.0625 0.5" pos="5.0 -3.9375 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.5 0.5" pos="2.0 -3.5 -14.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.1875 0.5" pos="1.0 -3.8125 -14.5" hidden="0" template="river_green"/>
+	<box size="0.5 2.3125 0.5" pos="9.0 -3.6875 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.1875 0.5" pos="10.0 -3.8125 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="11.0 -3.875 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="0.5 2.125 0.5" pos="13.0 -3.875 -14.5" hidden="0" template="river_wall" reflection="1"/>
+	<box size="19.0 0.5 8.0" pos="0.0 -2.5 -8.0" hidden="0" template="river_wall" reflection="1"/>
+	<box size="19.0 0.5 8.0" pos="0.0 8.0 -8.0" hidden="1" template="river_wall" reflection="1"/>
+	<box size="0.5 3.0 2.0" pos="0.0 -3.0 -14.0" hidden="0" template="river_green"/>
+</segment>
+
