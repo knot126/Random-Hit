@@ -10,14 +10,16 @@ end
 function init()
 	ray = mgGetBool("raycast", false)
 
-	mgScore(5, 0, 0.6, 0.1)
+	score = mgRandInt(4, 6)
+	mgScore(score, 0, 0.6, 0.1)
 	mgGlow(0, getY(), 0)
 	
 	body = mgCreateBody(0, getY(), 0)
 	cr, cg, cb = mgGetColor("color", 1, 1, 1)
 	
 	mgMaterial("glass")
-	mgColor(cr, cg, cb)
+	--mgColor(cr, cg, cb)
+	mgColor(mgRndFloat(0.2, 1.2), mgRndFloat(0.2, 1.2), mgRndFloat(0.2, 1.2))
 	mgRoundness(0.2)
 	
 	mgShapeScale(0.2, 0.5, 0.2)
@@ -35,7 +37,7 @@ function tick()
 			mgGlow(0, getY(), 0)
 		end	
 		if mgBodyIsBroken(body) then
-			mgScore(5, 0, getY(), 0.1)
+			mgScore(score, 0, getY(), 0.1)
 			mgClear()
 			mgReleaseMotion(body)
 		end

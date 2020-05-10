@@ -2,14 +2,7 @@ function init()
 	static = mgGetBool("static", true)
 	ray = mgGetBool("raycast", false)
 
-	if math.random(1000) == math.random(1000) then
-	-- If you're a hacker, just comment the above line and uncomment the below and every
-	-- crystal will count as +1000 balls. Also good for testing.
-	-- if 2 == 2 then
-        score = 1000
-    else
-        score = 3
-    end
+	score = mgRandInt(2, 4)
 	mgScore(score, 0, 0.6, 0.1)
 	mgGlow(0, 0.4, -.2)
 	
