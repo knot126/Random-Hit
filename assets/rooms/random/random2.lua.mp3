@@ -549,12 +549,12 @@ function init()
 
     local music = music_list[math.random(#music_list)]
     
-    local r0 = mgRndFloat(0.5, 1.5)
-    local g0 = mgRndFloat(0.5, 1.5)
-    local b0 = mgRndFloat(0.5, 1.5)
-    local r1 = mgRndFloat(0.5, 1.5)
-    local g1 = mgRndFloat(0.5, 1.5)
-    local b1 = mgRndFloat(0.5, 1.5)
+    local r0 = mgRndFloat(0.2, 1.5)
+    local g0 = mgRndFloat(0.2, 1.5)
+    local b0 = mgRndFloat(0.2, 1.5)
+    local r1 = mgRndFloat(0.2, 1.5)
+    local g1 = mgRndFloat(0.2, 1.5)
+    local b1 = mgRndFloat(0.2, 1.5)
     
     local gravity = mgRndFloat(-0.15, 1.15)
     local conflict = math.random(0, 1)
