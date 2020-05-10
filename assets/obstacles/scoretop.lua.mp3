@@ -23,7 +23,8 @@ function init()
 	cr, cg, cb = mgGetColor("color", 1, 1, 1)
 	
 	mgMaterial("glass")
-	mgColor(cr, cg, cb)
+	--mgColor(cr, cg, cb)
+	mgColor(mgRndFloat(0.2, 1.2), mgRndFloat(0.2, 1.2), mgRndFloat(0.2, 1.2))
 	mgRoundness(0.6)
 	
 	mgShapeScale(0.2, 1.0, 0.2)
