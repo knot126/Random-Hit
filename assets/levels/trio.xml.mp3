@@ -1,0 +1,1 @@
+<level>	<room type="random/random2" length="333" start="true" end="true" rrdifficulty="1.35"/>	<room type="random/random2" length="333" start="true" end="false" rrdifficulty="1.73"/>	<room type="random/random2" length="334" start="false" end="true" rrdifficulty="2.00"/>	<room type="random/boss" length="100" start="true" end="true"/></level>
