@@ -527,7 +527,7 @@ function init()
     -- A value greater than -1000 will set the
     -- gravity to that value.
     
-    local rotate_chance = {25, 12}
+    local rotate_chance = {20, 10}
     -- First number is main number to target through to 1
     -- Second number is the target number
     
