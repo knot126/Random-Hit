@@ -9,7 +9,7 @@
 		<level name="endless"/>
 		<level name="endless"/>
 		<level name="endless"/>
-		<level name="hell"/> <!-- Many bosses, few crystals, and it's fast... -->
+		<level name="ultra"/> <!-- Many bosses, few crystals, and it's fast... -->
 	</levels>
 </game>
 
