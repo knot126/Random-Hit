@@ -3,7 +3,7 @@ function init()
 	ray = mgGetBool("raycast", false)
 
 	score = mgRndInt(2, 4)
-	if mgGet("player.mode") == "2" then score = mgRndInt(1, 3) end
+	--if mgGet("player.mode") == "2" then score = mgRndInt(1, 3) end
 	mgScore(score, 0, 0.6, 0.1)
 	mgGlow(0, 0.4, -.2)
 	
