@@ -540,10 +540,6 @@ function init()
     -- START ROOM CONFIG
     -- This can be used to enable/disable some things...
     
-    local increseing_speed = 1 
-    -- For (Proof-Of-Concept) Dynamic TargetLen change
-    -- FIXME: It doesn't work.
-    
     local gravity_control = -1000
     -- To set gravity for all rooms
     -- A value greater than -1000 will set the
