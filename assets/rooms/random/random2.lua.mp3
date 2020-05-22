@@ -611,7 +611,7 @@ function init()
     end
 
     -- To help reduce clutter, I've moved the confSgement(s) statements into its own function...
-    loadSegments(true, false, false)
+    loadSegments(false, false, false)
     --newLoadSegments()
     
     l = 0
