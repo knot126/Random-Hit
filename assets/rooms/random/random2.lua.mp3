@@ -621,11 +621,11 @@ function init()
 
     -- Set the modification for playing in various game modes
     if mgGet("player.mode") == "0" then
-        mode_modify = 0.75
+        mode_modify = 0.8
     elseif mgGet("player.mode") == "2" then
-        mode_modify = 1.25
+        mode_modify = 1.2
     elseif mgGet("player.mode") == "3" then
-        mode_modify = 0.25
+        mode_modify = 0.5
     else
         mode_modify = 1.0
     end
