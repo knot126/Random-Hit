@@ -1,4 +1,6 @@
-function loadSegments(old_segments, enable_coop, zen_segments)
+function loadSegments(enable_coop, zen_segments, ease)
+    
+    if ease then
     confSegment("basic/basic/chasms", 1)
     confSegment("basic/basic/chasms2", 1)
     confSegment("basic/basic/stairs", 1)
@@ -13,6 +15,8 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("basic/darker/chasms", 1)
     confSegment("basic/darker/chasms_bs", 1)
     confSegment("basic/darker/powerup", 1)
+    end
+    
     confSegment("brownie/part3/16_0", 1)
     confSegment("brownie/part3/16_1", 1)
     confSegment("brownie/part3/16_2", 1)
@@ -25,6 +29,7 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("brownie/part1/16_1", 1)
     confSegment("brownie/part1/16_2", 1)
     confSegment("brownie/part1/16_3", 1)
+    
     confSegment("canyon/cave/8_0", 1)
     confSegment("canyon/cave/16_0", 1)
     confSegment("canyon/cave/32_0", 1)
@@ -38,6 +43,7 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("canyon/trail/16_2", 1)
     confSegment("canyon/trail/16_3", 1)
     confSegment("canyon/trail/32_0", 1)
+    
     confSegment("cave/spin/16_0", 1)
     confSegment("cave/spin/16_1", 1)
     confSegment("cave/spin/16_2", 1)
@@ -59,6 +65,8 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("cave/corridor/16_2", 1)
     confSegment("cave/corridor/16_3", 1)
     confSegment("cave/corridor/8_0", 1)
+    
+    if ease then
     confSegment("holodeck/bs", 1)
     confSegment("holodeck/bs2", 1)
     confSegment("holodeck/bs3", 1)
@@ -78,6 +86,8 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("holodeck/rapid4", 1)
     confSegment("holodeck/rapid5", 1)
     confSegment("holodeck/rapid6", 1)
+    end
+    
     confSegment("city/trench/16_0", 1)
     confSegment("city/trench/16_1", 1)
     confSegment("city/trench/16_2", 1)
@@ -106,6 +116,7 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("city/path2/16_1", 1)
     confSegment("city/path2/16_2", 1)
     confSegment("city/path2/16_3", 1)
+    
     confSegment("hyperspace/warp/32_0", 1)
     confSegment("hyperspace/warp/32_1", 1)
     confSegment("hyperspace/warp/32_2", 1)
@@ -125,6 +136,8 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("hyperspace/cruise/32_1", 1)
     confSegment("hyperspace/cruise/32_2", 1)
     confSegment("hyperspace/cruise/32_3", 1)
+    
+    if ease then
     confSegment("night/part3/elgrid_line_st", 1)
     confSegment("night/part3/elgrid_line_st2", 1)
     confSegment("night/part3/pendulums", 1)
@@ -146,6 +159,8 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("night/part1/elgrid_st", 1)
     confSegment("night/part1/elgrid_st_2", 1)
     confSegment("night/part1/elgrid_st_3", 1)
+    end
+    
     confSegment("ocean/tunnel/16_0", 1)
     confSegment("ocean/tunnel/16_1", 1)
     confSegment("ocean/tunnel/16_2", 1)
@@ -168,6 +183,7 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("ocean/sky/4_0", 1)
     confSegment("ocean/sky/8_0", 1)
     confSegment("ocean/sky/8_1", 1)
+    
     confSegment("phosphor/part4/16_0", 1)
     confSegment("phosphor/part4/16_1", 1)
     confSegment("phosphor/part4/16_2", 1)
@@ -186,6 +202,7 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("phosphor/part1/16_2", 1)
     confSegment("phosphor/part1/16_3", 1)
     confSegment("phosphor/part1/16_4", 1)
+    
     confSegment("river/tunnel/crank", 1)
     confSegment("river/tunnel/crank2", 1)
     confSegment("river/tunnel/hammer", 1)
@@ -200,6 +217,7 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("river/path/bar_bounce", 1)
     confSegment("river/path/bounce", 1)
     confSegment("river/path/fly", 1)
+    
     confSegment("cave2/top/16_0", 1)
     confSegment("cave2/top/16_1", 1)
     confSegment("cave2/top/16_2", 1)
@@ -387,22 +405,6 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     confSegment("credits/1", 0.2)
     confSegment("credits/2", 0.2)
     confSegment("credits/3", 0.2)
-    
-    if old_segments then
-        confSegment("riverx/bar", 1)
-        confSegment("riverx/bar_bounce", 1)
-        confSegment("riverx/bounce", 1)
-        confSegment("riverx/fly", 1)
-        
-        confSegment("riverx/green_hammers", 1)
-        confSegment("riverx/green_turrets", 1)
-        confSegment("riverx/green_cranks", 1)
-        
-        confSegment("riverx/blue_crank", 1)
-        confSegment("riverx/blue_crank2", 1)
-        confSegment("riverx/blue_hammer", 1)
-        confSegment("riverx/blue_hammer2", .5)
-    end
 
     -- Co-op/Versus Segments
     if enable_coop then
@@ -510,19 +512,6 @@ function loadSegments(old_segments, enable_coop, zen_segments)
     end
 end
 
-function newLoadSegments()
-    local segments = {"basic/basic/chasms", "basic/basic/chasms2", "basic/basic/stairs", "basic/basic/stairs2", "basic/dark/bs", "basic/dark/bs_extraballs", "basic/dark/2_bs", "basic/dark/2_bs_elevators", "basic/dark/ledges", "basic/darker/bs", "basic/darker/2_bs_arch", "basic/darker/chasms", "basic/darker/chasms_bs", "basic/darker/powerup", "brownie/part3/16_0", "brownie/part3/16_1", "brownie/part3/16_2", "brownie/part3/16_3", "brownie/part2/16_0", "brownie/part2/16_1", "brownie/part2/16_2", "brownie/part2/16_3", "brownie/part1/16_0", "brownie/part1/16_1", "brownie/part1/16_2", "brownie/part1/16_3", "canyon/cave/8_0", "canyon/cave/16_0", "canyon/cave/32_0", "canyon/columns/4_0", "canyon/columns/16_1", "canyon/columns/16_2", "canyon/columns/32_0", "canyon/trail/8_0", "canyon/trail/16_0", "canyon/trail/16_1", "canyon/trail/16_2", "canyon/trail/16_3", "canyon/trail/32_0", "cave/spin/16_0", "cave/spin/16_1", "cave/spin/16_2", "cave/narrow/16_0", "cave/narrow/16_1", "cave/narrow/16_2", "cave/narrow/16_3", "cave/narrow/8_0", "cave/narrow/8_1", "cave/hall/32_0", "cave/hall/16_1", "cave/hall/16_2", "cave/hall/16_3", "cave/hall/8_0", "cave/hall/8_1", "cave/hall/8_2", "cave/corridor/16_0", "cave/corridor/16_1", "cave/corridor/16_2", "cave/corridor/16_3", "cave/corridor/8_0", "holodeck/bs", "holodeck/bs2", "holodeck/bs3", "holodeck/fold", "holodeck/fold2", "holodeck/fold3", "holodeck/bonus_16_0", "holodeck/bonus_16_1", "holodeck/bonus_16_2", "holodeck/bonus_16_3", "holodeck/calm0", "holodeck/calm1", "holodeck/rapid0", "holodeck/rapid1", "holodeck/rapid2", "holodeck/rapid3", "holodeck/rapid4", "holodeck/rapid5", "holodeck/rapid6", "city/trench/16_0", "city/trench/16_1", "city/trench/16_2", "city/trench/16_3", "city/trench/16_4", "city/trench/16_5", "city/fall/32_0", "city/fall/32_1", "city/fall/32_2", "city/fall/32_3", "city/fall/32_4", "city/fall/32_5", "city/narrow/16_0", "city/narrow/16_1", "city/narrow/16_2", "city/narrow/16_3", "city/narrow/16_4", "city/narrow/16_5", "city/path/16_0", "city/path/16_1", "city/path/16_2", "city/path/16_3", "city/path/16_4", "city/path/16_5", "city/path2/16_0", "city/path2/16_1", "city/path2/16_2", "city/path2/16_3", "hyperspace/warp/32_0", "hyperspace/warp/32_1", "hyperspace/warp/32_2", "hyperspace/warp/32_3", "hyperspace/orbit/32_1", "hyperspace/orbit/32_2", "hyperspace/orbit/32_3", "hyperspace/orbit/32_4", "hyperspace/orbit/32_5", "hyperspace/orbit/32_6", "hyperspace/orbit/32_7", "hyperspace/fall/32_0", "hyperspace/fall/32_1", "hyperspace/fall/32_2", "hyperspace/fall/32_3", "hyperspace/cruise/32_0", "hyperspace/cruise/32_1", "hyperspace/cruise/32_2", "hyperspace/cruise/32_3", "night/part3/elgrid_line_st", "night/part3/elgrid_line_st2", "night/part3/pendulums", "night/part3/suspendcube", "night/part3/suspendcubes", "night/part3/suspendcubes_2", "night/part3/suspendcubes_3", "night/part2/crank", "night/part2/crank2", "night/part2/dna_dec", "night/part2/dna_dec2", "night/part2/dna_st", "night/part2/dna_st2", "night/part2/dna_st3", "night/part2/bar", "night/part2/iris", "night/part1/elgrid_box", "night/part1/elgrid_box2", "night/part1/elgrid_st", "night/part1/elgrid_st_2", "night/part1/elgrid_st_3", "ocean/tunnel/16_0", "ocean/tunnel/16_1", "ocean/tunnel/16_2", "ocean/tunnel/4_0", "ocean/tunnel/4_1", "ocean/tunnel/8_0", "ocean/towers/16_0", "ocean/towers/16_1", "ocean/towers/16_2", "ocean/towers/8_0", "ocean/towers/8_1", "ocean/towers/8_2", "ocean/towers/8_3", "ocean/stairs/16_0", "ocean/stairs/32_0", "ocean/stairs/8_0", "ocean/stairs/8_1", "ocean/stairs/8_2", "ocean/sky/16_0", "ocean/sky/4_0", "ocean/sky/8_0", "ocean/sky/8_1", "phosphor/part4/16_0", "phosphor/part4/16_1", "phosphor/part4/16_2", "phosphor/part4/16_3", "phosphor/part3/16_0", "phosphor/part3/16_1", "phosphor/part3/16_2", "phosphor/part3/16_3", "phosphor/part2/16_0", "phosphor/part2/16_1", "phosphor/part2/16_2", "phosphor/part2/16_3", "phosphor/part2/16_4", "phosphor/part1/16_0", "phosphor/part1/16_1", "phosphor/part1/16_2", "phosphor/part1/16_3", "phosphor/part1/16_4", "river/tunnel/crank", "river/tunnel/crank2", "river/tunnel/hammer", "river/tunnel/hammer2", "river/path2/16_0", "river/path2/16_1", "river/path2/16_2", "river/path2/16_3", "river/path2/16_4", "river/path2/16_5", "river/path/bar", "river/path/bar_bounce", "river/path/bounce", "river/path/fly", "cave2/top/16_0", "cave2/top/16_1", "cave2/top/16_2", "cave2/top/16_3", "cave2/top/16_4", "cave2/top/16_5", "cave2/narrow/16_0", "cave2/narrow/16_1", "cave2/narrow/16_2", "cave2/narrow/16_3", "cave2/narrow/16_4", "cave2/bottom/16_0", "cave2/bottom/16_1", "cave2/bottom/16_2", "cave2/bottom/16_3", "cave2/bottom/16_4", "cave2/bottom/16_5", "endless/open/obstacles/16_sweepers_x2", "endless/open/obstacles/8_suspendwindow", "endless/open/obstacles/8_rotor", "endless/open/obstacles/8_rotor2", "endless/open/obstacles/8_foldwindow", "endless/open/obstacles/8_foldwindow2", "endless/open/scores/16_scoretops_x6", "endless/open/scores/16_scoretops_x4", "endless/open/scores/16_scoretops_x4_2", "endless/open/scores/8_scoretops_x2", "endless/open/scores/8_scoretop", "endless/open/scores/8_scoretop2", "endless/open/powerups/8_ballfrenzy", "endless/open/powerups/8_ballfrenzy2", "endless/open/powerups/8_nitroballs", "endless/open/powerups/8_nitroballs2", "endless/open/powerups/8_slomo", "endless/open/powerups/8_slomo2", "endless/narrow/obstacles/16_pendulums_x2", "endless/narrow/obstacles/16_flycubes_x2", "endless/narrow/obstacles/16_cranks_x2", "endless/narrow/obstacles/8_suspendside", "endless/narrow/obstacles/8_suspendbox", "endless/narrow/obstacles/8_pyramid", "endless/narrow/obstacles/8_beatmill", "endless/narrow/scores/16_scoretops_x8", "endless/narrow/scores/16_scoretops_x6", "endless/narrow/scores/16_scoretops_x6_2", "endless/narrow/scores/16_scoretops_x4", "endless/narrow/scores/8_scoretops_x2", "endless/narrow/scores/8_scoretop", "endless/narrow/scores/8_scoretop2", "endless/narrow/scores/8_scoretop3", "endless/narrow/scores/8_scoretop4", "endless/narrow/powerups/8_ballfrenzy", "endless/narrow/powerups/8_ballfrenzy2", "endless/narrow/powerups/8_nitroballs", "endless/narrow/powerups/8_nitroballs2", "endless/wide/obstacles/16_lasers", "endless/wide/obstacles/16_lasers2", "endless/wide/obstacles/16_dropblocks", "endless/wide/obstacles/8_suspendcube", "endless/wide/obstacles/8_revolver", "endless/wide/obstacles/8_revolver2", "endless/wide/scores/16_scoretops_x8", "endless/wide/scores/16_scoretops_x6", "endless/wide/scores/8_scoretop3", "endless/wide/scores/8_scoretop4", "endless/wide/powerups/8_ballfrenzy", "endless/wide/powerups/8_ballfrenzy2", "endless/wide/powerups/8_nitro", "endless/space/obstacles/16_0", "endless/space/obstacles/16_1", "endless/space/obstacles/16_2", "endless/space/obstacles/16_3", "endless/space/scores/16_0", "endless/space/scores/16_1", "endless/space/scores/16_2", "endless/space/scores/16_3", "endless/narrow/fillers/8_0", "endless/narrow/fillers/8_2", "endless/narrow/fillers/8_3", "endless/narrow/fillers/16_0", "endless/narrow/fillers/16_1", "endless/open/fillers/8_0", "endless/open/fillers/8_1", "endless/open/fillers/8_2", "endless/open/fillers/8_3", "endless/open/fillers/16_0", "endless/open/fillers/16_1", "endless/wide/fillers/8_1", "endless/wide/fillers/8_2", "endless/wide/fillers/8_3", "endless/space/fillers/16_0", "endless/space/fillers/16_1", "endless/space/fillers/16_2", "endless/space/fillers/16_3", "endless/space/powerups/16_0", "endless/space/powerups/16_1", "endless/space/powerups/16_2", "endless/space/powerups/16_3"}
-    
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-    confSegment(segments[math.random(#segments)], mgRndFloat(0.75, 1.15))
-end
-
 function init()
 
     -- Random Hit - Random Room version 2.0beta1
@@ -558,12 +547,19 @@ function init()
     
     local start_segments = {"holodeck/bonus_start", "holodeck/start0", "holodeck/rapid_start", "holodeck/boss/start", "holodeck/calm_start", "basic/darker/start", "basic/dark/start", "basic/basic/start", "brownie/part3/start", "brownie/part2/start", "brownie/part1/start", "canyon/trail/start", "canyon/columns/start", "canyon/cave/start", "cave/spin/start", "cave/narrow/start", "cave/corridor/start", "cave2/top/start", "cave2/narrow/start", "cave2/bottom/start", "city/path/start", "city/narrow/start", "city/fall/start", "city/path/start", "city/path2/start", "hyperspace/warp/start", "hyperspace/orbit/start", "hyperspace/fall/start", "hyperspace/cruise/start", "night/part3/start", "night/part2/start", "night/part1/start", "ocean/tunnel/start", "ocean/towers/start", "ocean/stairs/start", "ocean/sky/start", "phosphor/part4/start", "phosphor/part3/start", "phosphor/part2/start", "phosphor/part1/start", "river/tunnel/start", "river/path2/start", "river/path/start"}
     -- A list of all the segments that are used to start a room
+    
+    local coop_segments = false
+    -- Enable or disable loading co-op segments
+    
+    local zen_segments = false
+    -- Enable or disable loading co-op segments
 
     -- END ROOM CONFIG
 
     pStart = mgGetBool("start", true)
     pEnd = mgGetBool("end", true)
     pDifficulty = mgGetFloat("rrdifficulty", 1.0)
+    pEase = mgGetBool("ease", true)
 
     local music = music_list[math.random(#music_list)]
     
@@ -607,8 +603,7 @@ function init()
     end
 
     -- To help reduce clutter, I've moved the confSgement(s) statements into its own function...
-    loadSegments(false, false, false)
-    --newLoadSegments()
+    loadSegments(coop_segments, zen_segments, pEase)
     
     l = 0
     
