@@ -637,24 +637,6 @@ function init()
     local targetLen = math.random(150, 350) * mode_modify
     --local targetLen = math.random(150, 350) * pDifficulty * mode_modify
 
-    if increaseing_speed == 1 then
-        -- Get game speed
-        k = mgGetInt("game.speed")
-        -- Check that game speed is no less than 150
-        if k < 150 then
-            k = 150
-        end
-        -- add 5 to game speed
-        k = k + 5
-        -- Check that game speed is no greater than 300
-        if k > 300 then
-            k = 300
-        end
-        -- Set new speed to length and game.speed
-        targetLen = k
-        mgSetInt("game.speed", k)
-    end
-
     while l < targetLen do
         s = nextSegment()
         l = l + mgSegment(s, -l)    
