@@ -514,7 +514,7 @@ end
 
 function init()
 
-    -- Random Hit - Random Room version 2.0beta1
+    -- Random Hit - Random Room version 2.0
     
     -- Here is the GitLab page for this mod's source:
     -- https://gitlab.com/cdde/smash-hit-random-rooms-1.x

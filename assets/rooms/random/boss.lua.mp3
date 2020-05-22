@@ -1,122 +1,73 @@
 function init()
 
-	-- Smash Hit random rooms - Room version 14.0 by cdde
-	-- Special thanks to Megadron Z_Z for some help.
+    -- Random Hit - Boss Room version 2.0
+    
+    -- Here is the GitLab page for this mod's source:
     -- https://gitlab.com/cdde/smash-hit-random-rooms-1.x
 
-	-- Note: My mod and Megadron Z_Z's mod are NOT THE
-	-- SAME! This one was inspired by his, with a slightly
-	-- diffrent vision.
+    -- This room file should play nicely (if configured
+    -- correctly) when repackaged into other mods.
+    -- Please do not hesitate to copy this into your own
+    -- Smash Hit mod as a game mode or similar!
+    
+    -- Special thanks to Megadron Z_Z for some help.
 
-	-- This room file should play nicely (if configured
-	-- correctly) when repackaged into default Smash Hit.
-	-- Please do not hesitate to copy this into your own
-	-- Smash Hit mod as a game mod or something!
-
-	-- Room Configuration
-	-- This can be used to enable/disable some things...
-
-	local has_old_music = 1 -- for music in old folder
-	local has_old_segments = 0 -- for old segments
-	coop_segments = 0 -- For most Co-Op/Versus segments
-    -- FIXME: It doesn't work:
-	local increseing_speed = 1 -- For (Proof-Of-Concept) Dynamic TargetLen change
-	local gravity_control = -1000 -- To set gravity for all rooms
-                                  -- A value greater than -1000 will set the
-                                  -- gravity to that value.
-    local rotate_chance = {25, 12} -- First number is main number to target through to 1
-                                   -- Second number is the target number
-
-	-- End Room Configuration
-
-	pStart = mgGetBool("start", true)
-	pEnd = mgGetBool("end", true)
-
-	local music = math.random(0, 45)
-	if has_old_music == 1 then
-		music = math.random(0, 46)
-	end
-	local color_a_red = mgRndFloat(0.5, 2)
-	local color_a_green = mgRndFloat(0.5, 2)
-	local color_a_blue = mgRndFloat(0.5, 2)
-	local color_b_red = mgRndFloat(0.5, 2)
-	local color_b_green = mgRndFloat(0.5, 2)
-	local color_b_blue = mgRndFloat(0.5, 2)
-	local gravity = mgRndFloat(-0.05, 1)
-	local conflict = math.random(0, 1)
-	
-	-- The following fixes the stop glitch, since 38 and 42 aren't real
-	-- musics, instead we use 29_1/2, 38_1/2 and 42_1/2.
-
-	if music == 29 then
-		if conflict == 1 then
-			music = "29"
-		elseif conflict == 0 then
-			music = "29_2"
-		end
-	elseif music == 38 then
-		if conflict == 1 then
-			music = "38_1"
-		elseif conflict == 0 then
-			music = "38_2"
-		end
-	elseif music == 42 then
-		if conflict == 1 then
-			music = "42_1"
-		elseif conflict == 0 then
-			music = "42_2"
-		end
-	elseif music == 45 then
-		music = "bowling"
-	elseif music == 46 then
-		-- POSSIBLE BUG: This music isn't loaded correctly -> stop glitch
-		music = "old/4_36s_test"
-	end
-
-	-- Setup enviorment
-	mgMusic(tostring(music)) -- Probably better to convert music to a string first
-	mgFogColor(color_a_red, color_a_green, color_a_blue, color_b_red, color_b_green, color_b_blue)
-    if gravity_control > -1000 then
-	    mgGravity(gravity_control)
-    else
-        mgGravity(gravity)
+    -- START ROOM CONFIG
+    -- This can be used to enable/disable some things...
+    
+    local gravity_control = -1000
+    -- To set gravity for all rooms
+    -- A value greater than -1000 will set the
+    -- gravity to that value.
+    
+    local rotate_chance = {20, 10}
+    -- First number is main number to target through to 1
+    -- Second number is the target number
+    
+    local music_list = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "29_2", "30", "31", "32", "33", "34", "35", "36", "37", "38_1", "38_2", "39", "40", "41", "42_1", "42_2", "43", "44", "bowling", "4_36s_test", "7_unused", "26_unused"}
+    -- A list of all the music files in game that can be played as music
+    -- To add a song, just add to the end of the list.
+    
+    ---------------------------------------------------------------------------
+    
+    local music = music_list[math.random(#music_list)]
+    
+    local r0 = mgRndFloat(0.15, 1.15)
+    local g0 = mgRndFloat(0.15, 1.15)
+    local b0 = mgRndFloat(0.15, 1.15)
+    local r1 = mgRndFloat(0.15, 1.15)
+    local g1 = mgRndFloat(0.15, 1.15)
+    local b1 = mgRndFloat(0.15, 1.15)
+        
+    mgMusic(tostring(music))
+    mgFogColor(r0, g0, b0, r1, g1, b1)
+    
+    local t = math.random(rotate_chance[1])
+    if t == rotate_chance[2] then
+        local x = math.random(-2, 2)
+        local y = math.random(-2, 2)
+        mgSetRotation(x, y)
     end
-
-	local r = math.random(5)
-
-	if r == 1 then
-		mgParticles("starfield")
-	elseif r == 2 then
-		mgParticles("sidesrising")
-	elseif r == 3 then
-		mgParticles("lowrising")
-	elseif r == 4 then
-		mgParticles("falling")
-	end
-
-	-- TODO: Rotation is tied to music
-	local t = math.random(rotate_chance[1])
-	if t == rotate_chance[2] then
-		mgSetRotation(-1)
-	end
-	
+    
+    ---------------------------------------------------------------------------
+    
     -- Lists for each segment in checkpoints
-	local starts = {"basic/boss/start", "night/boss/start", "holodeck/boss/start", "cave/boss/start", "canyon/boss/start", "ocean/boss/start", "cave2/boss/start", "river/boss/start", "brownie/boss/start", "phosphor/boss/start", "hyperspace/boss/start", "city/boss/start"}
+    local starts = {"basic/boss/start", "night/boss/start", "holodeck/boss/start", "cave/boss/start", "canyon/boss/start", "ocean/boss/start", "cave2/boss/start", "river/boss/start", "brownie/boss/start", "phosphor/boss/start", "hyperspace/boss/start", "city/boss/start"}
     
     local mids = {"basic/boss/mid", "night/boss/mid", "holodeck/boss/mid", "cave/boss/mid", "canyon/boss/mid", "ocean/boss/mid", "cave2/boss/mid", "river/boss/mid", "brownie/boss/mid", "phosphor/boss/mid", "hyperspace/boss/mid", "city/boss/mid"}
     
     local ends = {"basic/boss/end", "night/boss/end", "holodeck/boss/end", "cave/boss/end", "canyon/boss/end", "ocean/boss/end", "cave2/boss/end", "river/boss/end", "brownie/boss/end", "phosphor/boss/end", "hyperspace/boss/end", "city/boss/end"}
 
-	l = 0
+    l = 0
     -- Get a random segment
     local rand_start = starts[math.random(#starts)]
-	l = l + mgSegment(rand_start, -l)
+    l = l + mgSegment(rand_start, -l)
     local rand_mid = mids[math.random(#mids)]
-	l = l + mgSegment(rand_mid, -l)
+    l = l + mgSegment(rand_mid, -l)
     local rand_end = ends[math.random(#ends)]
-	l = l + mgSegment(rand_end, -l)
+    l = l + mgSegment(rand_end, -l)
 
-	mgLength(l)
+    mgLength(l)
 end
 
 function tick()
