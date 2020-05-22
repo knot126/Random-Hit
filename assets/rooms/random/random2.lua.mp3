@@ -588,7 +588,12 @@ function init()
     if gravity_control > -1000 then
         mgGravity(gravity_control)
     else
-        mgGravity(gravity)
+        local r = math.random(1, 8)
+        if r == 3 then
+            mgGravity(gravity)
+        else
+            mgGravity(1)
+        end
     end
 
     local r = math.random(5)
@@ -612,8 +617,8 @@ function init()
     end
 
     -- To help reduce clutter, I've moved the confSgement(s) statements into its own function...
-    --loadSegments(true, false)
-    newLoadSegments()
+    loadSegments(true, false)
+    --newLoadSegments()
     
     l = 0
     
