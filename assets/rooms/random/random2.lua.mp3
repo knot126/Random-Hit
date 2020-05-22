@@ -616,7 +616,7 @@ function init()
     if mgGet("player.mode") == "0" then
         mode_modify = 0.8
     elseif mgGet("player.mode") == "2" then
-        mode_modify = 1.2
+        mode_modify = 0.95
     elseif mgGet("player.mode") == "3" then
         mode_modify = 0.5
     else
