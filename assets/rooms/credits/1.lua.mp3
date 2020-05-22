@@ -1,22 +1,29 @@
 function init()
-	pStart = mgGetBool("start", true)
-	pEnd = mgGetBool("end", true)
+    pStart = mgGetBool("start", true)
+    pEnd = mgGetBool("end", true)
 
-	mgMusic("14")
-	mgReverb(0.2, 0.8, 0.3)
-	mgEcho(0.3, 0.2, 0.5, 0.5)
-	mgFogColor(1.8, 1.6, 0.9, .05, -0.5, -0.5)
-	
-	confSegment("basic/basic/chasms", 1)
-	
-	l = 0
-	
-	l = l + mgSegment("credits/start", -l)	
-	l = l + mgSegment("credits/1", -l)	
-	l = l + mgSegment("credits/2", -l)	
-	l = l + mgSegment("credits/3", -l)	
-		
-	mgLength(l)
+    local r0 = mgRndFloat(0.15, 1.15)
+    local g0 = mgRndFloat(0.15, 1.15)
+    local b0 = mgRndFloat(0.15, 1.15)
+    local r1 = mgRndFloat(0.15, 1.15)
+    local g1 = mgRndFloat(0.15, 1.15)
+    local b1 = mgRndFloat(0.15, 1.15)
+
+    mgMusic("14")
+    mgReverb(0.2, 0.8, 0.3)
+    mgEcho(0.3, 0.2, 0.5, 0.5)
+    mgFogColor(r0, g0, b0, r1, g1, b1)
+    
+    confSegment("basic/basic/chasms", 1)
+    
+    l = 0
+    
+    l = l + mgSegment("credits/start", -l)    
+    l = l + mgSegment("credits/1", -l)    
+    l = l + mgSegment("credits/2", -l)    
+    l = l + mgSegment("credits/3", -l)    
+        
+    mgLength(l)
 end
 
 function tick()
