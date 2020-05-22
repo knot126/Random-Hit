@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.0.4
+
+Changes since 1.x:
+
+ * Completely refactor the room and boss room
+ * Fixed the credits not working
+ * Changed functionality of certian things
+ * Crystals are now random colors
+ * Crystals can now have variations in number of balls given
+ * Restored the default basic segments
+ * Removed Zen, Split, and Old segments
+ * Ramped up the difficulty
+ * Added beta and early menu music
+ * New way of configuring doors
+ * Cleaned up the random room Lua significantly
+ * More things that aren't listed here
+
 ## 1.13.0
 
 Changes since 1.12.0:
