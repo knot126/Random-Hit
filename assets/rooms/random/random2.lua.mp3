@@ -598,15 +598,7 @@ function init()
 
     local r = math.random(5)
 
-    if r == 1 then
-        mgParticles("starfield")
-    elseif r == 2 then
-        mgParticles("sidesrising")
-    elseif r == 3 then
-        mgParticles("lowrising")
-    elseif r == 4 then
-        mgParticles("falling")
-    end
+    -- TODO: Re-write particle effects code.
 
     -- CONSDIER: Rotation is tied to music
     local t = math.random(rotate_chance[1])
