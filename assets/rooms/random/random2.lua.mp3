@@ -1,5 +1,6 @@
 function loadSegments(enable_coop, zen_segments, ease)
     
+    -- If the ease flag is passed (as true), then load these segments...
     if ease then
     confSegment("basic/basic/chasms", 1)
     confSegment("basic/basic/chasms2", 1)
@@ -529,6 +530,9 @@ function init()
     -- START ROOM CONFIG
     -- This can be used to enable/disable some things...
     
+    -- Note: Try to avoid using math.random(); instead,
+    -- use mgRndInt()
+    
     local gravity_control = -1000
     -- To set gravity for all rooms
     -- A value greater than -1000 will set the
@@ -561,8 +565,10 @@ function init()
     pDifficulty = mgGetFloat("rrdifficulty", 1.0)
     pEase = mgGetBool("ease", true)
 
+    -- Pick a random track from the music list using math.random()
     local music = music_list[math.random(#music_list)]
     
+    -- Generate colors using mgRndFloat
     local r0 = mgRndFloat(0.15, 1.15)
     local g0 = mgRndFloat(0.15, 1.15)
     local b0 = mgRndFloat(0.15, 1.15)
@@ -582,19 +588,18 @@ function init()
     if gravity_control > -1000 then
         mgGravity(gravity_control)
     else
-        local r = math.random(1, 8)
-        if r == 3 then
-            mgGravity(gravity)
-        else
-            mgGravity(1)
-        end
+        -- If you wanted to have random gravity, use:
+        -- mgGravity(mgRndFloat(-0.15, 1.15))
+        -- But that seems to make the game less challanging
+        mgGravity(1)
     end
 
     local r = math.random(5)
 
     -- TODO: Re-write particle effects code.
 
-    -- CONSDIER: Rotation is tied to music
+    -- TODO: Tie the rotation to the random music that is choosen; for example,
+    -- tracks 13, 25, 30 will rotate the stage...
     local t = math.random(rotate_chance[1])
     if t == rotate_chance[2] then
         local x = math.random(-2, 2)
@@ -613,10 +618,12 @@ function init()
     end
 
     -- Set the modification for playing in various game modes
+    -- At the top of menu/main.lua there is a list of which numbers
+    -- are which game modes.
     if mgGet("player.mode") == "0" then
-        mode_modify = 0.8
+        mode_modify = 0.9
     elseif mgGet("player.mode") == "2" then
-        mode_modify = 0.95
+        mode_modify = 1.05
     elseif mgGet("player.mode") == "3" then
         mode_modify = 0.5
     else
@@ -625,8 +632,7 @@ function init()
     
     -- Next line does this: 
     -- Random Number 150 to 350 times Difficulty times Game Mode = Our target length
-    local targetLen = math.random(150, 350) * mode_modify
-    --local targetLen = math.random(150, 350) * pDifficulty * mode_modify
+    local targetLen = mgRndInt(150, 350) * mode_modify
 
     while l < targetLen do
         s = nextSegment()
@@ -639,6 +645,7 @@ function init()
         l = l + mgSegment(door_segments[math.random(#door_segments)], -l)
     end
 
+    -- Tell core Smash Hit the length of this stage.
     mgLength(l)
 end
 
