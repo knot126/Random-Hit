@@ -631,7 +631,6 @@ function init()
     while l < targetLen do
         s = nextSegment()
         l = l + mgSegment(s, -l)    
-        l = l + math.random(2, 6) -- Add some space between segments
     end
 
     -- Random Doors
