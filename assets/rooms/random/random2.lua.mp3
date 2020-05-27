@@ -552,6 +552,9 @@ function init()
     local start_segments = {"holodeck/bonus_start", "holodeck/start0", "holodeck/rapid_start", "holodeck/boss/start", "holodeck/calm_start", "basic/darker/start", "basic/dark/start", "basic/basic/start", "brownie/part3/start", "brownie/part2/start", "brownie/part1/start", "canyon/trail/start", "canyon/columns/start", "canyon/cave/start", "cave/spin/start", "cave/narrow/start", "cave/corridor/start", "cave2/top/start", "cave2/narrow/start", "cave2/bottom/start", "city/path/start", "city/narrow/start", "city/fall/start", "city/path/start", "city/path2/start", "hyperspace/warp/start", "hyperspace/orbit/start", "hyperspace/fall/start", "hyperspace/cruise/start", "night/part3/start", "night/part2/start", "night/part1/start", "ocean/tunnel/start", "ocean/towers/start", "ocean/stairs/start", "ocean/sky/start", "phosphor/part4/start", "phosphor/part3/start", "phosphor/part2/start", "phosphor/part1/start", "river/tunnel/start", "river/path2/start", "river/path/start"}
     -- A list of all the segments that are used to start a room
     
+    local pfx = {"lowrising", "sidesrising", "dustyfalling", "fallinglite", "starfield", "falling", "lowrising2", "bubbles"}
+    -- A list of all the particle effects in Smash Hit
+    
     local coop_segments = false
     -- Enable or disable loading co-op segments
     
@@ -593,11 +596,11 @@ function init()
         -- But that seems to make the game less challanging
         mgGravity(1)
     end
-
-    local r = math.random(5)
-
-    -- TODO: Re-write particle effects code.
-
+    
+    if mgRndInt(1, 2) == 1 then
+        mgParticles(pfx[math.random(#pfx)])
+    end
+    
     -- TODO: Tie the rotation to the random music that is choosen; for example,
     -- tracks 13, 25, 30 will rotate the stage...
     local t = math.random(rotate_chance[1])
