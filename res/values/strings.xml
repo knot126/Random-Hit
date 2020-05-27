@@ -45,7 +45,7 @@
     <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <string name="app_id">1072460310481</string>
-    <string name="app_name">Random Hit</string>
+    <string name="app_name">Random Hit Classic</string>
     <string name="quit_dialog_title">Quit</string>
     <string name="quit_dialog_body">Are you sure you want to quit Smash Hit?</string>
     <string name="buy_button">Buy app</string>
