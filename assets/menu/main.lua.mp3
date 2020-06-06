@@ -6,8 +6,6 @@ MODE_VERSUS = 4
 MODE_COOP = 5
 MODE_COUNT = 6
 
-loadWithModes = 1
-
 function startsWith(str,start)
    return string.sub(str,1,string.len(start))==start
 end
@@ -162,12 +160,7 @@ end
 function load()
 	optionsButton = mgCreateUi("optionsbutton.xml")
 	mgSetScale(optionsButton, .75, .75)
-    if loadWithModes == 0 then
-        mgSetPos(optionsButton, left+50, bottom-155)
-    else
-        mgSetOrigo(optionsButton, "bottomleft")
-        mgSetPos(optionsButton, left+498, bottom-55)
-    end
+    mgSetPos(optionsButton, left+50, bottom-155)
 
 	optionsCanvas = mgCreateCanvas(1,1)
 	mgSetPos(optionsCanvas, centerX, centerY)
@@ -712,17 +705,6 @@ function drawWorld()
     mgSetOrigo(modWatermarkText, "bottomright")
 	mgSetColor(modWatermarkText, .75, .9, .95)
     -- mgDraw(modWatermarkText)
-    
-    if loadWithModes == 1 then
-        mgDraw(modeButton)
-        if mode == 1 then mgSetCrop(modeButton, 0, 0, 580, 134)
-        elseif mode == 3 then mgSetCrop(modeButton, 0, 135, 580, 268)
-        elseif mode == 0 then mgSetCrop(modeButton, 0, 268, 580, 401)
-        elseif mode == 4 then mgSetCrop(modeButton, 0, 536, 580, 668)
-        elseif mode == 5 then mgSetCrop(modeButton, 0, 670, 580, 802)
-        else mgSetCrop(modeButton, 0, 402, 580, 535)
-        end
-    end
 	
 
     mgSetAlpha(pauseUi, t)
