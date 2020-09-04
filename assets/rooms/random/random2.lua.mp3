@@ -66,6 +66,20 @@ function loadSegments(enable_coop, zen_segments, ease)
     confSegment("cave/corridor/16_2", 1)
     confSegment("cave/corridor/16_3", 1)
     confSegment("cave/corridor/8_0", 1)
+	
+    confSegment("other/deathstar/old/deathstar", 1)
+    confSegment("other/deathstar/old/deathstar_field", 1)	
+    confSegment("other/deathstar/old/deathstar_hall", 1)
+	
+    confSegment("other/deathstar/corridor/corridor_0", 1)		
+    confSegment("other/deathstar/corridor/corridor_1", 1)	
+    confSegment("other/deathstar/corridor/corridor_2", 1)	
+    confSegment("other/deathstar/corridor/corridor_3", 1)		
+
+    confSegment("other/deathstar/trench/trench_0", 1)		
+    confSegment("other/deathstar/trench/trench_1", 1)	
+    confSegment("other/deathstar/trench/trench_2", 1)	
+    confSegment("other/deathstar/trench/trench_3", 1)			
     
     if ease then
     confSegment("holodeck/bs", 1)
@@ -88,6 +102,34 @@ function loadSegments(enable_coop, zen_segments, ease)
     confSegment("holodeck/rapid5", 1)
     confSegment("holodeck/rapid6", 1)
     end
+	
+    confSegment("other/ocean/old/calm", 1)		
+    confSegment("other/ocean/old/hammers", 1)	
+    confSegment("other/ocean/old/tunnel", 1)	
+
+    confSegment("other/ocean/part1/ocean0", 1)			
+    confSegment("other/ocean/part1/ocean1", 1)		
+    confSegment("other/ocean/part1/ocean2", 1)	
+	
+    confSegment("other/ocean/part2/tunnel0", 1)		
+    confSegment("other/ocean/part2/tunnel1", 1)	
+    confSegment("other/ocean/part2/tunnel2", 1)	
+    confSegment("other/ocean/part2/tunnel3", 1)	
+
+    confSegment("other/canyon/field/ponds", 1)		
+    confSegment("other/canyon/field/rocks", 1)	
+    confSegment("other/canyon/field/rocks2", 1)	
+    confSegment("other/canyon/field/rocks3", 1)	
+
+    confSegment("other/canyon/trench/sweeper_rocks", 1)	
+    confSegment("other/canyon/trench/sweepers", 1)	
+    confSegment("other/canyon/trench/window_rocks", 1)	
+    confSegment("other/canyon/trench/windows", 1)		
+	
+    confSegment("other/canyon/tunnel/bar_cubes", 1)	
+    confSegment("other/canyon/tunnel/bar_falling", 1)	
+    confSegment("other/canyon/tunnel/falling", 1)	
+    confSegment("other/canyon/tunnel/scores", 1)		
     
     confSegment("city/trench/16_0", 1)
     confSegment("city/trench/16_1", 1)
@@ -542,14 +584,14 @@ function init()
     -- First number is main number to target through to 1
     -- Second number is the target number
     
-    local music_list = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "29_2", "30", "31", "32", "33", "34", "35", "36", "37", "38_1", "38_2", "39", "40", "41", "42_1", "42_2", "43", "44", "bowling", "4_36s_test", "7_unused", "26_unused"}
+    local music_list = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "29_2", "30", "31", "32", "33", "34", "35", "36", "37", "38_1", "38_2", "39", "40", "41", "42_1", "42_2", "43", "44", "bowling", "4_36s_test", "7_unused", "26_unused", "custom1", "custom2_alt", "custom3", "custom4_alt1", "custom4_alt2", "customhitv1", "customhitv2"}
     -- A list of all the music files in game that can be played as music
     -- To add a song, just add to the end of the list.
     
-    local door_segments = {"brownie/part2/door", "split/split_rot/door", "split/split0/door", "split/solo/door", "split/split_rot/door", "split/split1/door", "split/split2/door", "split/split_start/door", "brownie/part1/door", "brownie/part3/door", "endless/space/door", "endless/wide/door", "endless/open/door", "endless/narrow/door", "cave/narrow/door", "cave/spin/door", "cave/hall/door", "cave/corridor/door", "cave2/narrow/door", "cave2/bottom/door", "cave2/top/door2", "cave2/top/door", "city/narrow/door", "city/path2/door", "city/fall/door", "city/path/door", "city/trench/door", "canyon/cave/door", "canyon/trail/door", "canyon/columns/door", "phosphor/part4/door", "phosphor/part2/door", "phosphor/part1/door", "phosphor/part3/door", "holodeck/rapid_door", "holodeck/calm_door", "holodeck/bonus_door", "holodeck/beat_door", "holodeck/bonus_door", "zen/space/door", "zen/open/door", "zen/open/door", "zen/narrow/door", "ocean/towers/door", "ocean/stairs/door", "ocean/sky/door", "ocean/tunnel/door", "night/part2/door", "night/part1/door", "night/part3/door", "hyperspace/fall/door", "hyperspace/orbit/door", "hyperspace/warp/door", "hyperspace/cruise/door", "basic/darker/door", "basic/basic/door", "basic/dark/door", "river/path2/door", "river/path/door", "river/tunnel/door"}
+    local door_segments = {"brownie/part2/door", "split/split_rot/door", "split/split0/door", "split/solo/door", "split/split_rot/door", "split/split1/door", "split/split2/door", "split/split_start/door", "brownie/part1/door", "brownie/part3/door", "endless/space/door", "endless/wide/door", "endless/open/door", "endless/narrow/door", "cave/narrow/door", "cave/spin/door", "cave/hall/door", "cave/corridor/door", "cave2/narrow/door", "cave2/bottom/door", "cave2/top/door2", "cave2/top/door", "city/narrow/door", "city/path2/door", "city/fall/door", "city/path/door", "city/trench/door", "canyon/cave/door", "canyon/trail/door", "canyon/columns/door", "phosphor/part4/door", "phosphor/part2/door", "phosphor/part1/door", "phosphor/part3/door", "holodeck/rapid_door", "holodeck/calm_door", "holodeck/bonus_door", "holodeck/beat_door", "holodeck/bonus_door", "zen/space/door", "zen/open/door", "zen/open/door", "zen/narrow/door", "ocean/towers/door", "ocean/stairs/door", "ocean/sky/door", "ocean/tunnel/door", "night/part2/door", "night/part1/door", "night/part3/door", "hyperspace/fall/door", "hyperspace/orbit/door", "hyperspace/warp/door", "hyperspace/cruise/door", "basic/darker/door", "basic/basic/door", "basic/dark/door", "river/path2/door", "river/path/door", "river/tunnel/door", "other/canyon/field/door", "other/canyon/trench/door", "other/canyon/tunnel/door", "other/deathstar/trench/trench_end", "other/deathstar/corridor/corridor_end", "other/ocean/part2/tunnel_end", "other/ocean/part1/ocean_end"}
     -- A list of all the segments that are used to end a room
     
-    local start_segments = {"holodeck/bonus_start", "holodeck/start0", "holodeck/rapid_start", "holodeck/boss/start", "holodeck/calm_start", "basic/darker/start", "basic/dark/start", "basic/basic/start", "brownie/part3/start", "brownie/part2/start", "brownie/part1/start", "canyon/trail/start", "canyon/columns/start", "canyon/cave/start", "cave/spin/start", "cave/narrow/start", "cave/corridor/start", "cave2/top/start", "cave2/narrow/start", "cave2/bottom/start", "city/path/start", "city/narrow/start", "city/fall/start", "city/path/start", "city/path2/start", "hyperspace/warp/start", "hyperspace/orbit/start", "hyperspace/fall/start", "hyperspace/cruise/start", "night/part3/start", "night/part2/start", "night/part1/start", "ocean/tunnel/start", "ocean/towers/start", "ocean/stairs/start", "ocean/sky/start", "phosphor/part4/start", "phosphor/part3/start", "phosphor/part2/start", "phosphor/part1/start", "river/tunnel/start", "river/path2/start", "river/path/start"}
+    local start_segments = {"holodeck/bonus_start", "holodeck/start0", "holodeck/rapid_start", "holodeck/boss/start", "holodeck/calm_start", "basic/darker/start", "basic/dark/start", "basic/basic/start", "brownie/part3/start", "brownie/part2/start", "brownie/part1/start", "canyon/trail/start", "canyon/columns/start", "canyon/cave/start", "cave/spin/start", "cave/narrow/start", "cave/corridor/start", "cave2/top/start", "cave2/narrow/start", "cave2/bottom/start", "city/path/start", "city/narrow/start", "city/fall/start", "city/path/start", "city/path2/start", "hyperspace/warp/start", "hyperspace/orbit/start", "hyperspace/fall/start", "hyperspace/cruise/start", "night/part3/start", "night/part2/start", "night/part1/start", "ocean/tunnel/start", "ocean/towers/start", "ocean/stairs/start", "ocean/sky/start", "phosphor/part4/start", "phosphor/part3/start", "phosphor/part2/start", "phosphor/part1/start", "river/tunnel/start", "river/path2/start", "river/path/start", "other/canyon/field/start", "other/canyon/trench/start", "other/canyon/tunnel/start", "other/deathstar/trench/trench_start", "other/deathstar/corridor/corridor_start", "other/ocean/part2/tunnel_start", "other/ocean/part1/ocean_start"}
     -- A list of all the segments that are used to start a room
     
     local pfx = {"lowrising", "sidesrising", "dustyfalling", "fallinglite", "starfield", "falling", "lowrising2", "bubbles"}

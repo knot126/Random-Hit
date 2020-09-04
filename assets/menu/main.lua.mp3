@@ -6,7 +6,7 @@ MODE_VERSUS = 4
 MODE_COOP = 5
 MODE_COUNT = 6
 
-loadWithModes = 1
+loadWithModes = 0
 
 function startsWith(str,start)
    return string.sub(str,1,string.len(start))==start

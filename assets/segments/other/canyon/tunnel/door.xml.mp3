@@ -1,0 +1,16 @@
+<segment size="12 10 16" template="canyon_darker_s">
+	<obstacle pos="0.0 0.0 -15.5" hidden="0" type="doors/basic" param0="buttons=2"/>
+	<box size="1.0 0.5625 0.5" pos="0.0 -0.4375 -15.5" hidden="0" template="canyon_darker"/>
+	<box size="6.0 2.5 8.0" pos="8.0 2.5 -8.0" hidden="0" template="canyon_darker"/>
+	<box size="14.0 0.5 8.0" pos="0.0 -0.5 -8.0" hidden="0" template="canyon_darker"/>
+	<box size="0.5 0.5 0.5" pos="-1.5 1.0 -15.5" hidden="0" template="canyon_darker" tileSize="1 1 1"/>
+	<box size="1.0 0.25 0.5" pos="-2.0 1.75 -15.5" hidden="0" template="canyon_darker"/>
+	<box size="0.5 0.5 0.5" pos="1.5 1.0 -15.5" hidden="0" template="canyon_darker" tileSize="1 1 1"/>
+	<box size="1.0 0.25 0.5" pos="2.0 1.75 -15.5" hidden="0" template="canyon_darker"/>
+	<box size="2.0 1.0 8.0" pos="0.0 4.0 -8.0" hidden="1" template="canyon_darker"/>
+	<box size="6.0 2.5 8.0" pos="-8.0 2.5 -8.0" hidden="0" template="canyon_darker"/>
+	<box size="1.0 0.25 0.5" pos="2.0 0.25 -15.5" hidden="0" template="canyon_darker"/>
+	<box size="1.0 0.25 0.5" pos="-2.0 0.25 -15.5" hidden="0" template="canyon_darker"/>
+	<box size="2.0 1.5 0.5" pos="0.0 3.5 -15.5" hidden="0" template="canyon_darker"/>
+</segment>
+

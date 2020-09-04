@@ -1,0 +1,48 @@
+<segment size="12 10 16" lightBottom=".8" lightRight=".85" lightLeft=".9">
+	<obstacle pos="2.75 0.48315 -3.5" hidden="0" type="scoretop" param0="color=1 .9 0"/>
+	<obstacle pos="-2.75 0.48315 -3.5" hidden="0" type="scoretop" param0="color=1 .9 0"/>
+	<box size="0.375 0.0625 0.375" pos="-2.75 0.1875 -3.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.375 0.0625 0.375" pos="2.75 0.1875 -3.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -3.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -3.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="2.75 0.375 -3.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.0625 0.5" pos="2.75 0.0625 -3.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<box size="0.5 0.125 0.5" pos="2.75 0.375 -3.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.0625 0.5" pos="-2.75 0.0625 -3.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<obstacle pos="-2.75 0.48315 -6.5" hidden="0" type="scoretop" param0="color=1 .9 0"/>
+	<obstacle pos="2.75 0.48315 -6.5" hidden="0" type="scoretop" param0="color=1 .9 0"/>
+	<box size="0.375 0.0625 0.375" pos="2.75 0.1875 -6.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.375 0.0625 0.375" pos="-2.75 0.1875 -6.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.5 0.0625 0.5" pos="2.75 0.0625 -6.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<box size="0.5 0.0625 0.5" pos="-2.75 0.0625 -6.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<box size="0.5 0.125 0.5" pos="2.75 0.375 -6.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -6.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="2.75 0.375 -6.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -6.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<obstacle pos="-2.75 0.48315 -9.5" hidden="0" type="scoretop" param0="color=1 .9 0"/>
+	<box size="0.375 0.125 0.375" pos="2.75 0.625 -9.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.375 0.0625 0.375" pos="-2.75 0.1875 -9.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -9.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -9.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.0625 0.5" pos="-2.75 0.0625 -9.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<box size="0.5 0.25 0.5" pos="2.75 0.875 -9.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<box size="0.5 0.25 0.5" pos="2.75 0.25 -9.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<obstacle pos="2.75 0.48315 -12.5" hidden="0" type="scoretop" param0="color=1 .9 0"/>
+	<obstacle pos="-2.75 0.48315 -12.5" hidden="0" type="scoretop" param0="color=1 .9 0"/>
+	<box size="0.375 0.0625 0.375" pos="-2.75 0.1875 -12.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.375 0.0625 0.375" pos="2.75 0.1875 -12.5" hidden="0" tileX="13" tileZ="13" colorX=".7 .7 .7" colorZ=".8 .8 .8"/>
+	<box size="0.5 0.0625 0.5" pos="-2.75 0.0625 -12.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<box size="0.5 0.0625 0.5" pos="2.75 0.0625 -12.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="23" colorZ=".9 .9 .9" colorY=".7 .7 .7"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -12.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="2.75 0.375 -12.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="0.5 0.125 0.5" pos="-2.75 0.375 -12.5" hidden="0" tileX="22" tileZ="22" colorX=".8 .8 .8" tileY="11" colorZ=".9 .9 .9"/>
+	<box size="10.4375 0.5 8.0" pos="10.5625 -0.625 -8.0" hidden="0" tileY="12" colorY=".8 .8 .8" tileSize=".5 2 2" colorX=".8 .8 .8" tileX="12"/>
+	<box size="10.4375 0.5 8.0" pos="10.5625 -0.625 -8.0" hidden="0" tileY="12" colorY=".9 .9 .9" tileSize=".5 2 2" colorX=".8 .8 .8" tileX="12"/>
+	<box size="9.5 0.0625 8.0" pos="-11.5 -0.0625 -8.0" hidden="0" tileY="23" tileSize="2 2 2" tileX="23"/>
+	<box size="9.5 0.0625 8.0" pos="11.5 -0.0625 -8.0" hidden="0" tileY="23" tileSize="2 2 2" tileX="23"/>
+	<box size="0.125 0.375 8.0" pos="0.0 -0.75 -8.0" hidden="0" tileY="4" tileSize=".25 1 1"/>
+	<box size="9.625 0.125 0.4375" pos="-11.5 0.0 -15.5625" hidden="0" tileX="22" tileZ="22" tileY="23"/>
+	<box size="10.4375 0.5 8.0" pos="-10.5625 -0.625 -8.0" hidden="0" tileY="12" colorY=".8 .8 .8" tileSize=".5 2 2" colorX=".8 .8 .8" tileX="12"/>
+	<box size="9.625 0.125 0.4375" pos="11.5 0.0 -15.5625" hidden="0" tileX="22" tileZ="22" tileY="23"/>
+</segment>
+

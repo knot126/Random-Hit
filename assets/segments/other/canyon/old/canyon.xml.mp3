@@ -1,0 +1,56 @@
+<segment size="12 10 16" lightFront=".9" lightRight=".85" lightBottom=".8">
+	<box size="0.5 0.5 0.5" pos="6.375 2.5 -0.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.125 0.5" pos="5.5 0.125 -0.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="-6.375 2.5 -0.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.125" pos="4.5 0.5 -1.875" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.125" pos="-4.5 0.5 -1.875" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="6.375 4.5 -2.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="-6.375 4.5 -2.5" hidden="0" template="canyon"/>
+	<box size="1.5 1.0 1.5" pos="7.5 8.0 -2.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.125" pos="5.5 2.5 -3.875" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.125" pos="-5.5 2.5 -3.875" hidden="0" template="canyon"/>
+	<box size="1.5 1.0 1.5" pos="-7.5 8.0 -2.5" hidden="0" template="canyon"/>
+	<box size="0.125 0.5 0.5" pos="-2.875 0.0 -4.5" hidden="0" template="canyon"/>
+	<box size="0.5 1.0 0.5" pos="-5.5 3.0 -4.5" hidden="0" template="canyon"/>
+	<box size="0.125 0.5 0.5" pos="2.875 0.5 -4.5" hidden="0" template="canyon"/>
+	<box size="0.125 0.5 0.5" pos="3.875 1.5 -4.5" hidden="0" template="canyon"/>
+	<box size="0.1875 0.5 0.5" pos="4.8125 2.5 -4.5" hidden="0" template="canyon"/>
+	<box size="0.5 1.0 0.5" pos="5.5 3.0 -4.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.0625 0.5" pos="1.5 0.0625 -4.5" hidden="0" template="canyon"/>
+	<box size="0.125 0.5 0.5" pos="-3.875 1.0 -4.5" hidden="0" template="canyon"/>
+	<box size="0.1875 0.5 0.5" pos="-4.8125 2.5 -4.5" hidden="0" template="canyon"/>
+	<box size="1.0 0.5 1.5" pos="5.0 1.5 -4.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.25 1.5" pos="-3.5 0.25 -4.5" hidden="0" template="canyon"/>
+	<box size="1.0 0.5 1.5" pos="-5.0 1.5 -4.5" hidden="0" template="canyon"/>
+	<box size="1.0 0.5 2.5" pos="-5.0 0.5 -4.5" hidden="0" template="canyon"/>
+	<box size="1.5 0.5 2.5" pos="4.5 0.5 -4.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="-8.5 9.5 -7.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="8.5 9.5 -7.5" hidden="0" template="canyon"/>
+	<box size="0.5 3.5 4.0" pos="6.5 2.5 -4.0" hidden="0" template="canyon"/>
+	<box size="0.5 3.5 4.0" pos="-6.5 2.5 -4.0" hidden="0" template="canyon"/>
+	<box size="2.5 1.0 1.5" pos="-8.5 11.0 -7.5" hidden="0" template="canyon"/>
+	<box size="2.5 1.0 1.5" pos="8.5 11.0 -7.5" hidden="0" template="canyon"/>
+	<box size="1.5 5.0 1.5" pos="8.5 4.0 -7.5" hidden="0" template="canyon"/>
+	<box size="1.5 5.0 1.5" pos="-8.5 4.0 -7.5" hidden="0" template="canyon"/>
+	<box size="0.5 3.0 0.5" pos="6.5 2.0 -8.5" hidden="0" template="canyon"/>
+	<box size="0.5 3.0 0.5" pos="-6.5 2.0 -8.5" hidden="0" template="canyon"/>
+	<box size="2.5 1.0 1.5" pos="-8.5 11.0 -7.5" hidden="0" tileX="8" tileSize="2 2 2" colorX="1 .85 .7" colorZ="1 .95 .8" colorY=".9 .75 .6"/>
+	<box size="0.5 0.5 0.5" pos="-6.375 4.5 -10.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="6.375 4.5 -10.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.0625 0.5" pos="-4.5 0.0625 -10.5" hidden="0" template="canyon"/>
+	<box size="1.0 4.5 1.0" pos="8.0 3.5 -12.0" hidden="0" template="canyon"/>
+	<box size="1.0 4.5 1.0" pos="-8.0 3.5 -12.0" hidden="0" template="canyon"/>
+	<box size="0.5 0.125 0.5" pos="-4.5 0.125 -13.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="6.125 2.5 -13.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="6.375 4.5 -13.5" hidden="0" template="canyon"/>
+	<box size="0.75 0.5 0.5" pos="-6.125 3.5 -13.5" hidden="0" template="canyon"/>
+	<box size="0.75 0.5 0.5" pos="6.125 3.5 -13.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="-6.375 4.5 -13.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="-6.125 2.5 -13.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="-6.375 0.5 -14.5" hidden="0" template="canyon"/>
+	<box size="0.5 0.5 0.5" pos="6.375 0.5 -14.5" hidden="0" template="canyon"/>
+	<box size="6.5 0.5 8.0" pos="-0.5 -0.5 -8.0" hidden="0" template="canyon"/>
+	<box size="0.5 3.5 3.5" pos="-6.5 2.5 -12.5" hidden="0" template="canyon"/>
+	<box size="0.5 3.5 3.5" pos="6.5 2.5 -12.5" hidden="0" template="canyon"/>
+</segment>
+

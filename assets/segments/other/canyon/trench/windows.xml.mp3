@@ -1,0 +1,16 @@
+<segment size="12 10 16" template="canyon_dark_s">
+	<box size="6.5 3.0 1.0" pos="7.5 3.0 -1.0" hidden="0" template="canyon_dark"/>
+	<box size="6.5 3.0 1.0" pos="-7.5 3.0 -1.0" hidden="0" template="canyon_dark"/>
+	<obstacle pos="0.0 -0.10815 -6.5" hidden="0" template="canyon_glass" type="suspendwindow"/>
+	<box size="5.75 3.0 0.5" pos="8.25 3.0 -6.5" hidden="0" template="canyon_dark"/>
+	<box size="5.75 3.0 0.5" pos="-8.25 3.0 -6.5" hidden="0" template="canyon_dark"/>
+	<obstacle pos="0.0 -0.10815 -12.5" hidden="0" template="canyon_glass" type="suspendwindow"/>
+	<box size="5.75 3.0 0.5" pos="-8.25 3.0 -12.5" hidden="0" template="canyon_dark"/>
+	<box size="5.75 3.0 0.5" pos="8.25 3.0 -12.5" hidden="0" template="canyon_dark"/>
+	<box size="6.5 3.0 1.5" pos="7.5 3.0 -14.5" hidden="0" template="canyon_dark"/>
+	<box size="6.5 3.0 1.5" pos="-7.5 3.0 -14.5" hidden="0" template="canyon_dark"/>
+	<box size="1.0 3.0 1.0" pos="-2.0 9.125 -15.0" hidden="0" template="canyon_dark"/>
+	<box size="14.0 0.5 8.0" pos="0.0 -0.5 -8.0" hidden="0" template="canyon_dark"/>
+	<box size="1.0 3.0 1.0" pos="2.0 9.125 -15.0" hidden="0" template="canyon_dark"/>
+</segment>
+

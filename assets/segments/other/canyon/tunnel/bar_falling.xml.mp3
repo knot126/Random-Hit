@@ -1,0 +1,14 @@
+<segment size="12 10 16" template="canyon_darker_s">
+	<box size="2.0 1.0 1.0" pos="0.0 4.0 -1.0" hidden="0" template="canyon_darker"/>
+	<box size="2.0 1.0 2.5" pos="0.0 4.0 -2.5" hidden="0" template="canyon_darker"/>
+	<obstacle pos="0.0 0.99861 -5.5" hidden="0" template="canyon_glass" type="bar"/>
+	<box size="2.0 1.0 1.0" pos="0.0 4.0 -8.0" hidden="0" template="canyon_darker"/>
+	<obstacle pos="0.0 5.37361 -9.5" hidden="0" template="canyon_glass" type="dropblock"/>
+	<obstacle pos="0.0 0.99861 -10.5" hidden="0" template="canyon_glass" type="bar"/>
+	<box size="2.0 1.0 0.5" pos="0.0 4.0 -10.5" hidden="0" template="canyon_darker"/>
+	<box size="14.0 0.5 8.0" pos="0.0 -0.5 -8.0" hidden="0" template="canyon_darker"/>
+	<box size="6.0 2.5 8.0" pos="-8.0 2.5 -8.0" hidden="0" template="canyon_darker"/>
+	<box size="2.0 1.0 1.5" pos="0.0 4.0 -14.5" hidden="0" template="canyon_darker"/>
+	<box size="6.0 2.5 8.0" pos="8.0 2.5 -8.0" hidden="0" template="canyon_darker"/>
+</segment>
+
