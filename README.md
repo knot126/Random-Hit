@@ -1,6 +1,11 @@
-# Smash Hit Random Rooms 1.x
+# Random Hit 2.x
 
-This is the repository for Cdde's Smash Hit Random Rooms mod, for v1.9.1 and later. This repo only contains the `assets` folder, so you'll need to get the rest of the APK elsewhere. If you'd like to contribute, you can do that.
+This is the repository for the Random Hit mod, for v1.9.1 and later. This repo only contains the `assets` folder, so you'll need to get the rest of the APK elsewhere. If you'd like to contribute, you can do that.
+
+## Contributors
+
+* Knot126 (aka cdde) from v0.99 to v2.1.1
+* NewBartoszx1 from v2.1.4 and later
 
 ## Setup
 
